@@ -1,0 +1,48 @@
+@media screen and (max-width: 480px) {
+    #totop{
+        position: fixed;
+        width: 40px!important;
+        height: auto;
+        bottom: 20px!important;
+        right: 20px!important;
+        cursor: pointer;
+    }
+    .my-photo {
+        clip-path: circle(135px at center);   /* 半径と画像の中心点（center)を指定 */
+        text-align:center;
+        width: 100%;
+    }
+    .title{
+        margin: 0 20px 0 20px;
+    }
+    .twitter-top{
+        margin-bottom: 20px;
+    }
+    .triangle1 {
+        border-bottom: transparent!important;
+    }
+    .card {
+        margin-bottom: 40px;
+    }
+    .works {
+        margin-bottom: 30px!important;
+        padding-bottom: 0!important;
+    }
+    .contact {
+        margin: 20px 0!important;
+        padding: 10px 0!important;
+    }
+    .contact h2 {
+        margin-top: 10px!important;
+    }
+    footer .copyright {
+        text-align: center!important;
+    }
+    .skills {
+        margin: 10px 0 30px 0!important;
+        padding: 10px 0!important;
+    }
+    .skills .sec-title {
+        margin: 10px 0!important;
+    }
+}
