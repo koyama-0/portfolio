@@ -1,3 +1,50 @@
+.mypic{
+  width: 400px;
+}
+.works {
+  margin: 0 auto;
+  padding-bottom: 0!important;
+  background-color: hsl(0, 0%, 80%);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+
+}
+.myname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.center{
+  text-align: center;
+}
+.button_circle {
+  width: 10em;
+  height: 10em;
+  line-height: 10em;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  transition: .4s;
+
+  text-align: center;
+  background-color: hsl(0, 0%, 100%)
+}
+
+
+
+.button_circle:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+ }
 @media screen and (max-width: 480px) {
     #totop{
         position: fixed;
@@ -7,10 +54,8 @@
         right: 20px!important;
         cursor: pointer;
     }
-    .my-photo {
-        clip-path: circle(135px at center);   /* 半径と画像の中心点（center)を指定 */
-        text-align:center;
-        width: 100%;
+    .mypic {
+        width: 400px;
     }
     .title{
         margin: 0 20px 0 20px;
