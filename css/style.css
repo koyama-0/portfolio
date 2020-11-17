@@ -1,7 +1,28 @@
+.text-gray{
+  color: hsl(0, 0%, 50%);  /*文字色*/
+}
+
+a.movie-btn {
+  color: hsl(0, 0%, 100%);  /*文字色*/
+  background-color: hsl(0, 0%, 30%);  /*ボタンの色*/
+  border-bottom: 5px solid hsl(0, 0%, 20%); /*影の色*/
+}
+
+a.movie-btn:hover {
+  margin-top: 3px;
+  color: hsl(0, 0%, 100%);
+  background: # fff20a;
+  border-bottom: 2px solid hsl(0, 0%, 20%);
+}
+
 .tb_center {
     display: flex;
     justify-content: center; /*左右中央揃え*/
     align-items: center;     /*上下中央揃え*/
+}
+
+.comsoon{
+  color: hsl(0, 0%, 60%);
 }
 
 .font_arial{

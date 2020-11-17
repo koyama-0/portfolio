@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- reserch -->
     <h2 class="text-center mt-5 mb-3">Study</h2>
     <div class="center">
-      <p>インタラクションデザインの研究をしています。</p>
-      <p>中でも、複数</p>
+      <br><br>
+      <p>インタラクションデザインに所属しており<br>複数のロボットが会話をする多人数会話の研究を行っています。</p>
     </div>
 
     <img src="./image/pkb_jr_photo_short.png" alt="..." width="100%">
@@ -80,7 +81,7 @@
             <br>
             <br>
             <br>
-            <p>Rapport Talk を用いて Open Communication の場を作る</p>
+            <p>そこで私たちは Rapport Talk を用いて Open Communication の場を作る</p>
             <p>おしゃべりエージェントの研究をしています。</p>
             <br>
             <p>コンテンツにはニュースを採用しており、ユーザーへの情報提供を行います。</p>
@@ -103,7 +104,6 @@
                 <img class="tb_center" src="./image/study_read.png" alt="..." width="100%">
               </div>
               <br>
-              <br>
               <h5>応答責任が生じない</h5>
               <p>傍観的立ち位置のため、<br>
               会話への参加義務が生じない</p>
@@ -114,7 +114,6 @@
                 <img class="tb_center" src="./image/study_fukidashi.png" alt="..." width="100%">
               </div>
               <br>
-              <br>
               <h5>共感や参加を引き出す</h5>
               <p>ラポールトークにより、<br>
               会話への自由度が高くなる</p>
@@ -124,7 +123,7 @@
               <div height="100px" width="100px">
                 <img class="tb_center" src="./image/study_denkyu.png" alt="..." width="100%">
               </div>
-              <br><br>
+              <br>
               <h5>オーバーハード効果</h5>
               <p>間接的な情報取得により<br>
               受け入れられやすい。</p>
@@ -133,10 +132,41 @@
             <div class="col-md-3 center">
             </div>
         </div>
+        <br>
+        <br>
+        <div class="center">
+          <a class="btn movie-btn btn--cubic movie-modal-open center">　MOVIE ▶︎　</a>
+        </div>
+        <br>
+        <br>
+        <div class="center">
+          <p>開発環境　：　ROS 　 Python</p>
+        </div>
 
-
-
+        <!-- movie modal -->
+        <div class="modal movie-modal">
+            <div class="modal__bg movie-modal-close"></div>
+            <div class="modal__content">
+              <div class="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2eXItXtyKvM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div><!--modal__inner-->
+        </div><!--modal-->
     </section>
+    <script>
+    $(function(){
+        // step modal controll
+        $('.movie-modal-open').on('click',function(){
+            $('.movie-modal').fadeIn();
+            return false;
+        });
+        $('.movie-modal-close').on('click',function(){
+            $('.movie-modal').fadeOut();
+            return false;
+        });
+
+    });
+    </script>
 
   </body>
 </html>
