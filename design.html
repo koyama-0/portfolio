@@ -9,13 +9,110 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <!-- procon -->
+    <h2 class="text-center mt-5 mb-3">Design</h2>
+    <!-- design -->
     <section class="top py-5 my-5">
-      <h1>design</h1>
-    </section>
-    <iframe src="https://yellow.gray-code.com/" width="600" height="400"></iframe>
 
+      <div class="row">
+          <div class="col-md-2 center">
+          </div>
+          <div class="col-md-2 center">
+            <div height="100px" width="100%">
+              <a class="robotics-modal-open" href="">
+                <img class="tb_center" src="./image/design/robotics_front_sum.png" alt="..." width="100%">
+              </a>
+            </div>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-1 center"></div>
+          <div class="col-md-2 center">
+            <div height="100px" width="100%">
+              <a class="gurumi-modal-open" href="">
+                <img class="tb_center" src="./image/design/coconico_sum.png" alt="..." width="100%">
+              </a>
+            </div>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-1 center"></div>
+          <div class="col-md-2 center">
+            <div height="100px" width="100px">
+              <a class="gurumi-modal-open" href="">
+                <img class="tb_center" src="./image/design/steker/lumos_sum.png" alt="..." width="100%">
+              </a>
+            </div>
+            <br><br>
+          </div>
+          <div class="col-md-2 center">
+          </div>
+      </div>
+    </section>
+
+    <!-- robotics modal -->
+    <div class="modal robotics-modal">
+        <div class="modal__bg robotics-modal-close"></div>
+        <div class="modal__content">
+          <div class="center">
+            <img class="tb_center" src="./image/design/robotics_front_sum.png" alt="..." height="100%">
+            <img class="tb_center" src="./image/design/robotics_front_sum.png" alt="..." height="100%">
+          </div>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+
+    <!-- hanamaruform modal-->
+    <div class="modal hana-modal">
+        <div class="modal__bg hana-modal-close"></div>
+        <div class="modal__content">
+          <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k4fo7EeT164" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+
+    <!-- kazokugurumi modal -->
+    <div class="modal gurumi-modal">
+        <div class="modal__bg gurumi-modal-close"></div>
+        <div class="modal__content">
+          <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cuJtD8JOUyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+
+    <script>
+    $(function(){
+        // step modal controll
+        $('.step-modal-open').on('click',function(){
+            $('.step-modal').fadeIn();
+            return false;
+        });
+        $('.step-modal-close').on('click',function(){
+            $('.step-modal').fadeOut();
+            return false;
+        });
+        // hanamaruform modal controll
+        $('.hana-modal-open').on('click',function(){
+            $('.hana-modal').fadeIn();
+            return false;
+        });
+        $('.hana-modal-close').on('click',function(){
+            $('.hana-modal').fadeOut();
+            return false;
+        });
+        // kazokugurumi modal controll
+        $('.gurumi-modal-open').on('click',function(){
+            $('.gurumi-modal').fadeIn();
+            return false;
+        });
+        $('.gurumi-modal-close').on('click',function(){
+            $('.gurumi-modal').fadeOut();
+            return false;
+        });
+    });
+    </script>
   </body>
 </html>
