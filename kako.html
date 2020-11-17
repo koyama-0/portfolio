@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>sachomaru</title>
+    <meta charset="utf-8">
+    <meta name="description" content="小山紗希のポートフォリオサイトです。">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- procon -->
+    <h2 class="text-center mt-5 mb-3">Programming Contest</h2>
+    <section class="top py-5 my-5">
+        <div class="row">
+            <div class="row">
+              <div class="col-md-2 center">
+              </div>
+              <div class="col-md-4 center">
+                <a class="step-modal-open" href="">
+                  <img src="./image/step.png" alt="..." width="90%">
+                </a>
+              </div>
+              <div class="col-md-4">
+                <br>
+                <h4>STEP</h4>
+                <hr style="border:0 border-top:3px dotted black">
+                <p>高専プロコン(2017)課題部門 最優秀賞/文部科学大臣賞受賞</p>
+                <br>
+                <h5>スキル</h5>
+                <p>Swift  HTML  PHP  javaScript  presentation</p>
+              </div>
+              <div class="col-md-2 center">
+              </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+        <div class="row">
+            <div class="row">
+              <div class="col-md-2 center">
+              </div>
+              <div class="col-md-4 center">
+                <a class="hana-modal-open" href="">
+                  <img src="./image/hanamaruform.png" alt="..." width="90%">
+                </a>
+              </div>
+              <div class="col-md-4">
+                <br>
+                <h4>はなまるフォーム</h4>
+                <hr style="border:0 border-top:3px dotted black">
+                <p>高専プロコン(2014)自由部門 優秀賞受賞<br>企業家甲子園(2015)出場</p>
+                <br>
+                <h5>スキル</h5>
+                <p>Objective-c  presentation</p>
+              </div>
+              <div class="col-md-2 center">
+              </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="row">
+              <div class="col-md-2 center">
+              </div>
+              <div class="col-md-4 center">
+                <a class="gurumi-modal-open" href="">
+                  <img src="./image/kazokugurumi.png" alt="..." width="90%">
+                </a>
+              </div>
+              <div class="col-md-4">
+                <br>
+                <h4>かぞくぐるみ</h4>
+                <hr style="border:0 border-top:3px dotted black">
+                <p>高専プロコン(2013)課題部門 優秀賞受賞<br>Disital Youth Award(2014)準グランプリ<br>Imagine Cup(2014) 世界大会出場</p>
+                <br>
+                <h5>スキル</h5>
+                <p>裁縫  presentation</p>
+              </div>
+              <div class="col-md-2 center">
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- step modal -->
+    <div class="modal step-modal">
+        <div class="modal__bg step-modal-close"></div>
+        <div class="modal__content">
+          <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6bI2SKVrhlI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+
+    <!-- hanamaruform modal-->
+    <div class="modal hana-modal">
+        <div class="modal__bg hana-modal-close"></div>
+        <div class="modal__content">
+          <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k4fo7EeT164" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+
+    <!-- kazokugurumi modal -->
+    <div class="modal gurumi-modal">
+        <div class="modal__bg gurumi-modal-close"></div>
+        <div class="modal__content">
+          <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cuJtD8JOUyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+
+    <script>
+    $(function(){
+        // step modal controll
+        $('.step-modal-open').on('click',function(){
+            $('.step-modal').fadeIn();
+            return false;
+        });
+        $('.step-modal-close').on('click',function(){
+            $('.step-modal').fadeOut();
+            return false;
+        });
+        // hanamaruform modal controll
+        $('.hana-modal-open').on('click',function(){
+            $('.hana-modal').fadeIn();
+            return false;
+        });
+        $('.hana-modal-close').on('click',function(){
+            $('.hana-modal').fadeOut();
+            return false;
+        });
+        // kazokugurumi modal controll
+        $('.gurumi-modal-open').on('click',function(){
+            $('.gurumi-modal').fadeIn();
+            return false;
+        });
+        $('.gurumi-modal-close').on('click',function(){
+            $('.gurumi-modal').fadeOut();
+            return false;
+        });
+    });
+    </script>
+
+  </body>
+</html>

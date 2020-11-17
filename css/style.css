@@ -1,14 +1,62 @@
+.tb_center {
+    display: flex;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center;     /*上下中央揃え*/
+}
+
+.font_arial{
+  font-family : Arial;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin: 0 auto;
+    padding: 40px;
+}
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+    display: flex;
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 45%;
+}
+
+.right_yose{
+  margin-left: auto;
+}
+
 .mypic{
-  width: 400px;
+  width: 100%;
 }
 .works {
-  margin: 0 auto;
   padding-bottom: 0!important;
   background-color: hsl(0, 0%, 80%);
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
-
+  margin-bottom: 0px;
+}
+.works_bottom{
+  height: 400px
 }
 .myname {
   display: flex;
