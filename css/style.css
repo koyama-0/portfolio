@@ -1,5 +1,7 @@
 .font_space_title {letter-spacing: 0.20em}
 .font_space_sub {letter-spacing: 0.10em}
+.text-inline{overflow: hidden;}
+.appstore-button{float: left;}
 
 .text-gray{
   color: hsl(0, 0%, 50%);  /*文字色*/
