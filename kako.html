@@ -12,8 +12,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <!-- メニューバー -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white nav-h fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-dark" href="./index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-dark" href="./about.html">about</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-dark" href="#">works</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-dark" href="./study.html">study</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-dark" href="./design.html">design</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br>
     <!-- procon -->
-    <h2 class="text-center mt-5 mb-3">Programming Contest</h2>
+    <div class="row">
+      <div class="col-md-2 center"></div>
+      <div class="col-md-8">
+        <h2 class="mt-5 mb-3 font_space_title" style="color:hsl(0, 0%, 40%)">works</h2>
+      </div>
+      <div class="col-md-2 center"></div>
+    </div>
     <section class="top py-5 my-5">
         <div class="row">
             <div class="row">
@@ -21,24 +56,24 @@
               </div>
               <div class="col-md-4 center">
                 <a class="step-modal-open" href="">
-                  <img src="./image/step.png" alt="..." width="80%">
+                  <img src="./image/step.png" alt="..." width="80%" style="border:solid 1px hsl(0, 0%, 50%)">
                 </a>
               </div>
               <div class="col-md-4">
                 <br>
                 <h4>STEP</h4>
-                <hr style="border:0 border-top:3px dotted black">
+                <hr style="border:0 border-top:3px solid hsl(0, 0%, 50%)">
                 <p>高専プロコン(2017)課題部門 最優秀賞/文部科学大臣賞受賞</p>
                 <br>
-                <h5>スキル</h5>
-                <p>Swift  HTML  PHP  javaScript  presentation</p>
+                <h6 class="text-gray">〈 experience 〉</h6>
+                <p class="text-gray">　チームリーダー　メインプログラマ　プレゼンテーター<br>
+                  　Swift  HTML  PHP  javaScript  presentation</p>
               </div>
               <div class="col-md-2 center">
               </div>
             </div>
         </div>
-        <br>
-        <br>
+        <br><br><br><br>
 
 
         <div class="row">
@@ -47,24 +82,28 @@
               </div>
               <div class="col-md-4 center">
                 <a class="hana-modal-open" href="">
-                  <img src="./image/hanamaruform.png" alt="..." width="80%">
+                  <img src="./image/hanamaruform.png" alt="..." width="80%" style="border:1px solid hsl(0, 0%, 50%)">
+
                 </a>
               </div>
               <div class="col-md-4">
                 <br>
-                <h4>はなまるフォーム</h4>
-                <hr style="border:0 border-top:3px dotted black">
+                <div class="text-inline">
+                  <h4>はなまるフォーム</h4>
+                  <!-- <a href="https://apps.apple.com/jp/app/%E3%81%AF%E3%81%AA%E3%81%BE%E3%82%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0/id1151310209">App Store ▷</a> -->
+                </div>
+                <hr style="border:0 border-top:3px solid hsl(0, 0%, 50%)">
                 <p>高専プロコン(2014)自由部門 優秀賞受賞<br>企業家甲子園(2015)出場</p>
                 <br>
-                <h5>スキル</h5>
-                <p>Objective-c  presentation</p>
+                <h6 class="text-gray">〈 experience 〉</h6>
+                <p class="text-gray">　チームリーダー　メインプログラマ　プレゼンテーター</br>
+                  　Objective-c OpenCV</p>
               </div>
               <div class="col-md-2 center">
               </div>
             </div>
         </div>
-        <br>
-        <br>
+        <br><br><br><br>
 
         <div class="row">
             <div class="row">
@@ -72,17 +111,17 @@
               </div>
               <div class="col-md-4 center">
                 <a class="gurumi-modal-open" href="">
-                  <img src="./image/kazokugurumi.png" alt="..." width="80%">
+                  <img src="./image/kazokugurumi.png" alt="..." width="80%" style="border:1px solid hsl(0, 0%, 50%)">
                 </a>
               </div>
               <div class="col-md-4">
                 <br>
                 <h4>かぞくぐるみ</h4>
-                <hr style="border:0 border-top:3px dotted black">
+                <hr style="border:0 border-top:3px solid hsl(0, 0%, 50%)">
                 <p>高専プロコン(2013)課題部門 優秀賞受賞<br>Disital Youth Award(2014)準グランプリ<br>Imagine Cup(2014) 世界大会出場</p>
                 <br>
-                <h5>スキル</h5>
-                <p>裁縫  presentation</p>
+                <h6 class="text-gray">〈 experience 〉</h6>
+                <p class="text-gray">　ぬいぐるみ設計/制作  プレゼンテーター</p>
               </div>
               <div class="col-md-2 center">
               </div>

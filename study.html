@@ -12,17 +12,56 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <!-- メニューバー -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white nav-h fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-dark" href="./index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-dark" href="./about.html">about</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-dark" href="./kako.html">works</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-dark" href="#">study</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link text-dark" href="./design.html">design</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- reserch -->
-    <h2 class="text-center mt-5 mb-3">Study</h2>
+    <br><br><br><br>
+    <div class="row">
+      <div class="col-md-2 center"></div>
+      <div class="col-md-8">
+        <h2 class="mt-5 mb-3 font_space_title" style="color:hsl(0, 0%, 40%)">study</h2>
+      </div>
+      <div class="col-md-2 center"></div>
+    </div>
     <div class="center">
       <br><br>
       <p>インタラクションデザインに所属しており<br>複数のロボットが会話をする多人数会話の研究を行っています。</p>
     </div>
+    <br><br>
 
     <img src="./image/pkb_jr_photo_short.png" alt="..." width="100%">
+    <br><br>
+    <!-- <div style="padding: 20px; border: 1px solid hsl(0, 0%, 40%);"> -->
+    <h4 class="mt-5 mb-3 font_space_title center" style="color:hsl(0, 0%, 40%)">concept</h2>
+    <!-- </div> -->
     <section class="top py-5 my-5">
         <div class="row">
-            <div class="row">
               <div class="col-md-2 center">
               </div>
               <div class="col-md-4 center">
@@ -30,22 +69,20 @@
                 <br>
                 <p>周囲の会話につい耳をかたむけてしまうことはありませんか？</p>
                 <br>
-                <p>このように会話内容が周囲にひらけた会話を</p>
-                <p> "Open Communication" と呼びます。</p>
+                <p>このように会話内容が周囲にひらかれた会話は</p>
+                <p> "Open Communication" のひとつです。</p>
               </div>
               <div class="col-md-4">
                 <img class="center" src="./image/study_openc.png" alt="..." width="120%">
               </div>
               <div class="col-md-2 center">
               </div>
-            </div>
         </div>
         <br>
         <br>
 
 
         <div class="row">
-            <div class="row">
               <div class="col-md-1 center">
               </div>
               <div class="col-md-5 center">
@@ -58,11 +95,10 @@
                 <p>会話を ”Rapport Talk” と言います。</p>
                 <br>
                 <p>これは報告や会議といった場面よりも、友達との会話などによくみられる形で、</p>
-                <p>共通の話題に対して発話者等は並ぶ関係にあります。</p>
+                <p>共通の話題に対して会話の参加者は並ぶ関係にあります。</p>
               </div>
-            </div>
-            <div class="col-md-1 center">
-            </div>
+              <div class="col-md-1 center">
+              </div>
         </div>
         <br>
         <br>
@@ -81,7 +117,7 @@
             <br>
             <br>
             <br>
-            <p>そこで私たちは Rapport Talk を用いて Open Communication の場を作る</p>
+            <p>そこで私たちは Rapport Talk を用いた Open Communication の場を作る</p>
             <p>おしゃべりエージェントの研究をしています。</p>
             <br>
             <p>コンテンツにはニュースを採用しており、ユーザーへの情報提供を行います。</p>
@@ -115,8 +151,7 @@
               </div>
               <br>
               <h5>共感や参加を引き出す</h5>
-              <p>ラポールトークにより、<br>
-              会話への自由度が高くなる</p>
+              <p> Rapport Talk により、発言に対するハードルを下げる。</p>
               <br>
             </div>
             <div class="col-md-2 center">
@@ -126,7 +161,7 @@
               <br>
               <h5>オーバーハード効果</h5>
               <p>間接的な情報取得により<br>
-              受け入れられやすい。</p>
+              納得感が高くなる。</p>
               <br>
             </div>
             <div class="col-md-3 center">
@@ -137,8 +172,49 @@
         <div class="center">
           <a class="btn movie-btn btn--cubic movie-modal-open center">　MOVIE ▶︎　</a>
         </div>
-        <br>
-        <br>
+        <br><br>
+
+        <h4 class="mt-5 mb-3 font_space_title center" style="color:hsl(0, 0%, 40%)">implementation</h4>
+        <br><br>
+
+        <!-- cad -->
+        <div class="row">
+          <div class="col-md-3 center"></div>
+          <div class="col-md-3 center">
+            <img class="center" src="./image/cad.png" alt="..." width="50%">
+          </div>
+          <div class="col-md-4">
+            <br>
+            <br>
+            <h5 class="center font_space_sub">CAD design</h5>
+            <br>
+            <p class="text-gray">頭部にはAruduino Micro,<br>首にはピッチ軸・ヨー軸に回転可能なサーボモータを搭載。</p>
+            <p class="text-gray">SolidWorks を用いて設計を行いました。</p>
+          </div>
+          <div class="col-md-2 center">
+          </div>
+        </div>
+        <br><br>
+
+        <!-- cording -->
+        <div class="row">
+          <div class="col-md-2 center"></div>
+          <div class="col-md-4">
+            <br><br>
+            <h5 class="center font_space_sub">coding skill</h5>
+            <br>
+            <p class="text-gray">MeCab , CaboCha 等のライブラリを使用して<br>自然言語処理・形態素解析を行います。</p>
+            <p class="text-gray">これにより、1つのニュースデータから複数の発話を生成し、<br>エージェント同士の会話を実現しています。<p>
+          </div>
+          <div class="col-md-3 center">
+            <br>
+            <img class="center tb-center" src="./image/study-coding.png" alt="..." width="70%">
+          </div>
+          <div class="col-md-3 center"></div>
+        </div>
+
+
+        <br><br><br><br>
         <div class="center">
           <p>開発環境　：　ROS 　 Python</p>
         </div>
