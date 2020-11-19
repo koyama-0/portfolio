@@ -24,6 +24,10 @@ height:100%;
 min-height:100%;
 } */
 
+.wrap {
+	overflow: hidden;
+}
+
 a.movie-btn {
   color: hsl(0, 0%, 100%);  /*文字色*/
   background-color: hsl(0, 0%, 30%);  /*ボタンの色*/
