@@ -1,5 +1,6 @@
 .font_space_title {letter-spacing: 0.20em}
 .font_space_sub {letter-spacing: 0.10em}
+.font_space_name {letter-spacing: 0.05em}
 .text-inline{overflow: hidden;}
 .inline{float: left;}
 
@@ -136,9 +137,6 @@ a.movie-btn:hover {
 
 
 
-/* .nav-h{
-  height: 100px;
-} */
 
 .button_circle:active {
   -webkit-transform: translateY(2px);
