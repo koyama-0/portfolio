@@ -1,7 +1,7 @@
 .font_space_title {letter-spacing: 0.20em}
 .font_space_sub {letter-spacing: 0.10em}
 .text-inline{overflow: hidden;}
-.appstore-button{float: left;}
+.inline{float: left;}
 
 .text-gray{
   color: hsl(0, 0%, 50%);  /*文字色*/
@@ -114,9 +114,15 @@ a.movie-btn:hover {
   background-color: hsl(0, 0%, 0%);
 }
 
-.nav-h{
-  height: 100px;
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
 }
+
+
+
+/* .nav-h{
+  height: 100px;
+} */
 
 .button_circle:active {
   -webkit-transform: translateY(2px);
@@ -124,6 +130,10 @@ a.movie-btn:hover {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   border-bottom: none;
  }
+
+ /* .nav-item:hover {
+     background: #ebebeb;
+ } */
 
  .navi_bottom{
    position: absolute;
