@@ -9,14 +9,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" media="screen">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
   <body>
     <div class="wrap">
       <!-- メニューバー -->
       <nav class="navbar navbar-expand-lg navbar-light bg-white nav-h fixed-top">
+
           <div class="container">
-              <a class="navbar-brand text-dark" href="./index.html">home</a>
+              <div class="bt-area center">
+                  <a href="./index.html">home</a>
+              </div>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -25,16 +32,21 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item mr-2">
-                          <a class="nav-link text-dark" href="./about.html">about</a>
                       </li>
                       <li class="nav-item mr-2">
-                          <a class="nav-link text-dark" href="./kako.html">works</a>
+                        <div class="bt-area center">
+                            <a href="./works.html">works</a>
+                        </div>
                       </li>
                       <li class="nav-item mr-2">
-                          <a class="nav-link text-dark" href="#">study</a>
+                        <div class="bt-area center">
+                            <a href="#">study</a>
+                        </div>
                       </li>
                       <li class="nav-item mr-2">
-                          <a class="nav-link text-dark" href="./design.html">design</a>
+                        <div class="bt-area center">
+                            <a href="./design.html">design</a>
+                        </div>
                       </li>
                   </ul>
               </div>
@@ -50,22 +62,104 @@
         </div>
         <div class="col-md-2 center"></div>
       </div>
-      <div class="center">
-        <br><br>
-        <p>インタラクションデザイン研究室に所属しており<br>複数のロボットが会話をする多人数会話の研究を行っています。</p>
-      </div>
-      <br><br>
 
-      <img src="./image/pkb_jr_photo_short.png" alt="..." width="100%">
-      <br><br>
+      <!-- <img src="./image/pkb_jr_photo_short.png" alt="..." width="100%"> -->
+
+      <div>
+        <div class="row inview fadeIn">
+            <div class="col-md-2"></div>
+
+            <!-- <div class="col-md-1"></div> -->
+            <div class="col-md-4 center" style="top:10px">
+              <svg viewBox="0 0 283.46 283.46">
+                <clipPath id="c-myphoto">
+
+                  <path>
+                    <animate attributeType="XML" attributeName="d" dur="25s" repeatCount="indefinite"
+                    values="M127.34,252.12c-38.67-10.31-71.6,4.1-91.04-52.33c-11.05-32.07-31.18-86.3-3.36-124.61
+                      c31.52-43.4,114.75-57.67,148.67-46.97c38.84,12.25,46.87,55.09,67.31,81.87c20.49,26.85,17.84,67.05,9.3,82.3
+                      C241.09,223.03,222.37,277.45,127.34,252.12z;
+
+                      M209.61,229.97c-34.63,20.06-47.73,53.53-101.38,27.37c-30.49-14.87-83.07-38.98-90.49-85.73
+                        C9.34,118.62,58.1,49.68,89.66,33.26c36.13-18.8,72.1,5.81,105.49,10.3c33.47,4.49,60.02,34.8,64.78,51.62
+                        C269.47,128.96,294.72,180.68,209.61,229.97z;
+
+                      M257.86,157.26c-10.31,38.67,4.1,71.6-52.33,91.04c-32.07,11.05-86.3,31.18-124.61,3.36
+                        c-43.4-31.52-57.67-114.75-46.97-148.67c12.25-38.84,55.09-46.87,81.87-67.31c26.85-20.49,67.05-17.84,82.3-9.3
+                        C228.76,43.51,283.18,62.22,257.86,157.26z;
+
+                      M225.1,75.98c20.06,34.63,53.53,47.73,27.37,101.38c-14.87,30.49-38.98,83.07-85.73,90.49
+                        c-52.98,8.4-121.92-40.36-138.34-71.91c-18.8-36.13,5.81-72.1,10.3-105.49c4.49-33.47,34.8-60.02,51.62-64.78
+                        C124.09,16.12,175.8-9.13,225.1,75.98z;
+
+                      M154.18,36.29c38.67,10.31,71.6-4.1,91.04,52.33c11.05,32.07,31.18,86.3,3.36,124.61
+                        c-31.52,43.4-114.75,57.67-148.67,46.97c-38.84-12.25-46.87-55.09-67.31-81.87c-20.49-26.85-17.84-67.05-9.3-82.3
+                        C40.43,65.39,59.15,10.96,154.18,36.29z;
+
+                      M71.91,58.44c34.63-20.06,47.73-53.53,101.38-27.37c30.49,14.87,83.07,38.98,90.49,85.73
+                        c8.4,52.98-40.36,121.92-71.91,138.34c-36.13,18.8-72.1-5.81-105.49-10.3c-33.47-4.49-60.02-34.8-64.78-51.62
+                        C12.05,159.45-13.2,107.74,71.91,58.44z;
+
+                      M32.22,129.36c10.31-38.67-4.1-71.6,52.33-91.04c32.07-11.05,86.3-31.18,124.61-3.36
+                        c43.4,31.52,57.67,114.75,46.97,148.67c-12.25,38.84-55.09,46.87-81.87,67.31c-26.85,20.49-67.05,17.84-82.3,9.3
+                        C61.32,243.11,6.89,224.39,32.22,129.36z;
+
+                      M54.38,211.63C34.32,177,0.85,163.91,27.01,110.25c14.87-30.49,38.98-83.07,85.73-90.49
+                        c52.98-8.4,121.92,40.36,138.34,71.91c18.8,36.13-5.81,72.1-10.3,105.49c-4.49,33.47-34.8,60.02-51.62,64.78
+                        C155.39,271.49,103.67,296.74,54.38,211.63z;
+
+                      M127.34,252.12c-38.67-10.31-71.6,4.1-91.04-52.33c-11.05-32.07-31.18-86.3-3.36-124.61
+                        c31.52-43.4,114.75-57.67,148.67-46.97c38.84,12.25,46.87,55.09,67.31,81.87c20.49,26.85,17.84,67.05,9.3,82.3
+                        C241.09,223.03,222.37,277.45,127.34,252.12z" />
+                  </path>
+                </clipPath>
+                <image xlink:href="./image/study/pkb_jr_photo_sq.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#c-myphoto)"/>
+            </svg>
+            </div>
+            <div class="col-md-4" style="top:120px">
+              <!--
+
+              <a id="implement" class="text-gray font_space_title btn-border-bottom-s" onclick="scrollToTop_imp()" style="left:20px; top:80px">▷ implementation</a> -->
+              <h4 class="mameron text-gray wf-roundedmplus1c">「 あのね、えっとね ... 」</h4>
+              <br>
+              <p class="mameron text-gray">子どもたちのおしゃべりのような会話に<br>つい耳を傾けてしまう</p>
+              <br><br>
+              <h6 class="mameron text-wgray">私たちは複数のロボットが会話をする多人数会話の<br>インタラクションデザインについて研究しています</h6>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+      </div>
+      <br>
+      <div class="center py-4 my-3">
+        <div style="top:100px">
+          <a id="background" class="text-gray font_space_title btn-border-bottom-s" onclick="scrollToTop_back()" style="color:hsl(0, 0%, 40%);">↓ background</a>
+        </div>
+      </div>
       <!-- <div style="padding: 20px; border: 1px solid hsl(0, 0%, 40%);"> -->
-      <h4 class="mt-5 mb-3 font_space_title center" style="color:hsl(0, 0%, 40%)">concept</h2>
+
       <!-- </div> -->
-      <section class="top py-5 my-5">
+      <div style="height:100px;"></div>
+      <section class="top py-4 my-4">
+          <!-- <div class="py-4 my-4 kagi"> -->
           <div class="row">
-                <div class="col-md-2 center">
+            <div class="col-md-4 center">
+            </div>
+            <div class="col-md-4 center">
+              <div class="kagi">
+                <p id="background-scroll" class="font_space_title center kakoi" style="color:hsl(0, 0%, 40%)">background</p>
+              </div>
+            </div>
+            <div class="col-md-4 center">
+            </div>
+          </div>
+
+
+          <div class="row inview fadeIn_up py-4">
+                <div class="col-md-3 center">
                 </div>
-                <div class="col-md-4 center">
+                <div class="col-md-4 right">
                   <br>
                   <br>
                   <p>周囲の会話につい耳をかたむけてしまうことはありませんか？</p>
@@ -73,124 +167,164 @@
                   <p>このように会話内容が周囲にひらかれた会話は</p>
                   <p> "Open Communication" のひとつです。</p>
                 </div>
-                <div class="col-md-4">
-                  <img class="center" src="./image/study_openc.png" alt="..." width="120%">
+                <div class="col-md-4" style="left:20px">
+                  <img class="center" src="./image/study/openc.jpg" alt="..." width="60%">
                 </div>
-                <div class="col-md-2 center">
-                </div>
-          </div>
-          <br>
-          <br>
-
-
-          <div class="row">
                 <div class="col-md-1 center">
                 </div>
-                <div class="col-md-5 center">
-                  <img src="./image/study_raport.png" alt="..." width="80%">
+          </div>
+
+
+          <div class="row inview fadeIn_up py-4">
+                <div class="col-md-1 center">
                 </div>
-                <div class="col-md-5 center">
+                <div class="col-md-4 center">
+                  <img src="./image/study/raport.png" alt="..." width="80%">
+                </div>
+                <div class="col-md-5 left">
                   <br>
                   <br>
                   <p>また、伝えることよりも繋がることを目的とした</p>
                   <p>会話を ”Rapport Talk” と言います。</p>
                   <br>
-                  <p>これは報告や会議といった場面よりも、友達との会話などによくみられる形で、</p>
+                  <p>これは報告や会議といった場面よりも、雑談などによくみられる形で、</p>
                   <p>共通の話題に対して会話の参加者は並ぶ関係にあります。</p>
                 </div>
-                <div class="col-md-1 center">
+                <div class="col-md-2 center">
                 </div>
           </div>
-          <br>
-          <br>
+          <div class="center py-3">
+            <div style="top:100px">
+              <a id="concept" class="text-gray font_space_title btn-border-bottom-s" onclick="scrollToTop_concept()" style="color:hsl(0, 0%, 40%);">↓ concept</a>
+            </div>
+          </div>
+          <div style="height:100px;"></div>
+          <div class="row">
+            <div class="col-md-4 center">
+            </div>
+            <div class="col-md-4 center">
+              <div class="kagi">
+                <p id="concept-scroll" class="font_space_title center kakoi" style="color:hsl(0, 0%, 40%)">concept</p>
+              </div>
+            </div>
+            <div class="col-md-4 center">
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-2 center">
             </div>
             <div class="col-md-8 center">
+
+              <h3 class="font_space_sub py-3 my-3 inview fadeIn_up" style="color:hsl(0, 0%, 40%)">Open Communication × Rapport Talk</h3>
               <br>
+              <img class="my-2 inview fadeIn_up" src="./image/study/concept.png" alt="..." width="70%">
               <br>
-              <h3>Open Communication × Rapport Talk</h3>
-              <br>
-              <br>
-              <br>
-              <img src="./image/study_concept.png" alt="..." width="80%">
-              <br>
-              <br>
-              <br>
-              <br>
-              <p>そこで私たちは Rapport Talk を用いた Open Communication の場を作る</p>
-              <p>おしゃべりエージェントの研究をしています。</p>
-              <br>
-              <p>コンテンツにはニュースを採用しており、ユーザーへの情報提供を行います。</p>
+              <div class="my-2 inview fadeIn_up">
+                <p>そこで私たちは Rapport Talk を用いた Open Communication の場を作る</p>
+                <p>おしゃべりエージェントの研究をしています。</p>
+                <br>
+
+              </div>
             </div>
             <div class="col-md-2 center">
             </div>
           </div>
 
-          <br>
-          <br>
-          <br>
-          <br>
 
 
+          <div class="center py-3">
+            <div style="top:100px">
+              <a id="concept" class="text-gray font_space_title btn-border-bottom-s" onclick="scrollToTop_feature()" style="color:hsl(0, 0%, 40%);">↓ feature</a>
+            </div>
+          </div>
+          <div style="height:100px;"></div>
+          <div class="row py-3 my-3">
+            <div class="col-md-4 center">
+            </div>
+            <div class="col-md-4 center">
+              <div class="kagi">
+                <p id="feature-scroll" class="font_space_title center kakoi" style="color:hsl(0, 0%, 40%)">feature</p>
+              </div>
+            </div>
+            <div class="col-md-4 center">
+            </div>
+          </div>
+          <div class="">
+            <div class="row">
+                <div class="col-md-3 center">
+                </div>
+                <div class="col-md-2 center inview fadeIn_up">
+                  <div height="100px" width="100%">
+                    <img class="tb_center" src="./image/study/read.png" alt="..." width="100%">
+                  </div>
+                  <br>
+                  <h5>応答責任が生じない</h5>
+                  <p>傍観的立ち位置のため<br>
+                  会話への参加義務が生じない</p>
+                  <br>
+                </div>
+                <div class="col-md-2 center inview fadeIn_up">
+                  <div height="100px" width="100%">
+                    <img class="tb_center" src="./image/study/fukidashi.png" alt="..." width="100%">
+                  </div>
+                  <br>
+                  <h5>共感や参加を引き出す</h5>
+                  <p> Rapport Talk により<br>発言へのハードルを下げる</p>
+                  <br>
+                </div>
+                <div class="col-md-2 center inview fadeIn_up">
+                  <div height="100px" width="100px">
+                    <img class="tb_center" src="./image/study/denkyu.png" alt="..." width="100%">
+                  </div>
+                  <br>
+                  <h5>オーバーハード効果</h5>
+                  <p>間接的な情報取得により<br>
+                  納得感が高くなる</p>
+                  <br>
+                </div>
+                <div class="col-md-3 center">
+                </div>
+            </div>
+            <div class="center inview fadeIn_up" style="color:hsl(0, 0%, 40%)">
+              <p>コンテンツにはニュースを採用しており、ユーザーへの間接的な情報提供を行います。</p>
+            </div>
+
+            <div class="center py-4 my-3 inview fadeIn_up">
+              <a class="btn movie-btn btn--cubic movie-modal-open center">　movie ▶︎　</a>
+            </div>
+          </div>
+          <div class="center py-3">
+            <div style="top:100px">
+              <a id="implementation" class="text-gray font_space_title btn-border-bottom-s" onclick="scrollToTop_imp()" style="color:hsl(0, 0%, 40%);">↓ implementation</a>
+            </div>
+          </div>
+
+          <div style="height:100px;"></div>
           <div class="row">
-              <div class="col-md-3 center">
+            <div class="col-md-4 center">
+            </div>
+            <div class="col-md-4 center">
+              <div class="kagi">
+                <p id="imp-scroll" class="font_space_title center kakoi" style="color:hsl(0, 0%, 40%)">implementation</p>
               </div>
-              <div class="col-md-2 center">
-                <div height="100px" width="100%">
-                  <img class="tb_center" src="./image/study_read.png" alt="..." width="100%">
-                </div>
-                <br>
-                <h5>応答責任が生じない</h5>
-                <p>傍観的立ち位置のため<br>
-                会話への参加義務が生じない</p>
-                <br>
-              </div>
-              <div class="col-md-2 center">
-                <div height="100px" width="100%">
-                  <img class="tb_center" src="./image/study_fukidashi.png" alt="..." width="100%">
-                </div>
-                <br>
-                <h5>共感や参加を引き出す</h5>
-                <p> Rapport Talk により<br>発言に対するハードルを下げる</p>
-                <br>
-              </div>
-              <div class="col-md-2 center">
-                <div height="100px" width="100px">
-                  <img class="tb_center" src="./image/study_denkyu.png" alt="..." width="100%">
-                </div>
-                <br>
-                <h5>オーバーハード効果</h5>
-                <p>間接的な情報取得により<br>
-                納得感が高くなる</p>
-                <br>
-              </div>
-              <div class="col-md-3 center">
-              </div>
+            </div>
+            <div class="col-md-4 center">
+            </div>
           </div>
-          <br>
-          <br>
-          <div class="center">
-            <a class="btn movie-btn btn--cubic movie-modal-open center">　MOVIE ▶︎　</a>
-          </div>
-          <br><br>
-
-          <h4 class="mt-5 mb-3 font_space_title center" style="color:hsl(0, 0%, 40%)">implementation</h4>
-          <br><br>
 
           <!-- cad -->
-          <div class="row">
+          <div class="row inview fadeIn_up py-3 my-3">
             <div class="col-md-3 center"></div>
             <div class="col-md-3 center">
               <img class="center" src="./image/cad.png" alt="..." width="50%">
             </div>
             <div class="col-md-4">
-              <br>
-              <br>
-              <h5 class="center font_space_sub">CAD design</h5>
-              <br>
-              <p class="text-gray">頭部にはAruduino Micro,<br>首にはピッチ軸・ヨー軸に回転可能なサーボモータを搭載。</p>
-              <p class="text-gray">SolidWorks を用いて設計を行いました。</p>
+              <br><br>
+              <div style="top:20px">
+                <h5 class="left font_space_sub">CAD design</h5>
+                <p class="text-gray">頭部にはAruduino Micro,<br>首にはピッチ軸・ヨー軸に回転可能なサーボモータを搭載。</p>
+                <p class="text-gray">SolidWorks を用いて設計を行いました。</p>
+              </div>
             </div>
             <div class="col-md-2 center">
             </div>
@@ -198,26 +332,21 @@
           <br><br>
 
           <!-- cording -->
-          <div class="row">
+          <div class="row inview fadeIn_up">
             <div class="col-md-2 center"></div>
             <div class="col-md-4">
-              <br><br>
-              <h5 class="center font_space_sub">coding skill</h5>
-              <br>
-              <p class="text-gray">MeCab , CaboCha 等のライブラリを使用して<br>自然言語処理・形態素解析を行います。</p>
-              <p class="text-gray">これにより、1つのニュースデータから複数の発話を生成し、<br>エージェント同士の会話を実現しています。<p>
+              <h5 class="font_space_sub right">coding skill</h5>
+              <p class="text-gray right">MeCab , CaboCha 等のライブラリを使用して<br>自然言語処理・形態素解析を行います。</p>
+              <p class="text-gray right">1つのニュースデータから複数の発話を生成し、<br>エージェント同士の会話を実現しています。<p>
             </div>
             <div class="col-md-3 center">
-              <br>
-              <img class="center tb-center" src="./image/study-coding.png" alt="..." width="70%">
+              <img class="center tb-center" src="./image/study/coding.png" alt="..." width="60%">
             </div>
             <div class="col-md-3 center"></div>
           </div>
 
-
-          <br><br><br><br>
-          <div class="center">
-            <p>開発環境　：　ROS 　 Python</p>
+          <div class="center py-3 my-3 inview fadeIn_up">
+            <p class="text-gray">開発環境　：　ROS 　 Python</p>
           </div>
 
           <!-- movie modal -->
@@ -255,9 +384,53 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
           integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
           crossorigin="anonymous"></script>
-      <script src="js/jquery-3.5.1.min.js" defer></script>
-      <script src="js/slick.min.js" defer></script>
-      <script src="js/scripts.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+
+      <script src="./js/jquery.inview.min.js" type="text/javascript"></script>
+      <script>
+
+
+        function scrollToTop_back() {
+          // var element = document.getElementById('background-scroll'); // 移動させたい位置の要素を取得
+          // var rect = element.getBoundingClientRect();
+          // var position = rect.top-100;    // 一番上からの位置を取得
+          // scrollTo(0, position);
+          $("html,body").animate({scrollTop:$('#background-scroll').offset().top-80});
+        }
+
+        function scrollToTop_concept() {
+          // var element = document.getElementById('concept-scroll'); // 移動させたい位置の要素を取得
+          // var rect = element.getBoundingClientRect();
+          // var position = rect.top-100;    // 一番上からの位置を取得
+          // scrollTo(0, position);
+          $("html,body").animate({scrollTop:$('#concept-scroll').offset().top-80});
+        }
+
+        function scrollToTop_feature() {
+          // var element = document.getElementById('imp-scroll'); // 移動させたい位置の要素を取得
+          // var rect = element.getBoundingClientRect();
+          // var position = rect.top-100;    // 一番上からの位置を取得
+          // scrollTo(0, position);
+          $("html,body").animate({scrollTop:$('#feature-scroll').offset().top-80});
+        }
+
+        function scrollToTop_imp() {
+          // var element = document.getElementById('imp-scroll'); // 移動させたい位置の要素を取得
+          // var rect = element.getBoundingClientRect();
+          // var position = rect.top-100;    // 一番上からの位置を取得
+          // scrollTo(0, position);
+          $("html,body").animate({scrollTop:$('#imp-scroll').offset().top-80});
+        }
+
+        $(function(){
+          $(".inview").on("inview", function (event, isInView) {
+            console.log("inview");
+            if (isInView) {
+              $(this).stop().addClass("is-show");
+            }
+          });
+        });
+      </script>
     </div>
 
   </body>

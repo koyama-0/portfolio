@@ -1,28 +1,38 @@
 .font_space_title {letter-spacing: 0.20em}
 .font_space_sub {letter-spacing: 0.10em}
 .font_space_name {letter-spacing: 0.05em}
+.font_7px {font size="3"}
 .text-inline{overflow: hidden;}
 .inline{float: left;}
 
 .text-gray{
   color: hsl(0, 0%, 50%);  /*文字色*/
 }
-/* index product　下まで引き伸ばす */
-/* html{
-height:100%;
+.text-wgray{
+  color: hsl(0, 0%, 70%);  /*文字色*/
 }
-body{
-margin: 0;
-padding: 0;
-height:100%;
+
+.text-white{
+  color: hsl(0, 0%, 100%);  /*文字色*/
 }
-body > .box {
-height: auto;
+
+/* フォント */
+.wf-mplus1p { font-family: "M PLUS 1p"; }
+.wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
+.kosugimaru { font-family: 'Kosugi Maru', sans-serif; }
+@font-face {
+  font-family:'mameron';
+  src:url("./font/Mamelon.woff2") format('woff2');
 }
-.box{
-height:100%;
-min-height:100%;
-} */
+
+.mameron{
+  font-family: 'mameron';
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
 
 .wrap {
 	overflow: hidden;
@@ -107,9 +117,30 @@ a.movie-btn:hover {
 }
 .myname {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 70px;
 }
+
+.twitter{
+  text-decoration: none;
+  position:relative;
+  left: 5px;
+  top: 10px;
+}
+.twitter-a{
+  text-decoration: none;
+}
+
+
+.insta{
+  position:relative;
+  top: 10px;
+  left: 15px;
+}
+
+.display-none{
+  display: none;
+}
+
 .product{
   margin: 0 auto;
   display: flex;
@@ -118,27 +149,36 @@ a.movie-btn:hover {
 .center{
   text-align: center;
 }
-.button_circle {
-  width: 10em;
-  height: 10em;
-  line-height: 10em;
 
-  border-radius: 50%;
-  overflow: hidden;
-
-  transition: .4s;
-
-  text-align: center;
-  background-color: hsl(0, 0%, 100%);
+.right{
+  text-align: right;
 }
-.button_circle:hover{
-  background-color: hsl(0, 0%, 0%);
+
+.left{
+  text-align: left;
+}
+
+
+/* 文字囲う */
+.kakoi {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    /* font-weight: bold; */
+    border: solid 2px hsl(0, 0%, 40%);
+}
+.kakoi p {
+    margin: 2em;
+    padding: 2em;
 }
 
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,0);
 }
 
+.works_f{
+  position:  absolute;
+  bottom: 10px;
+}
 
 
 
@@ -153,10 +193,51 @@ a.movie-btn:hover {
      background: #ebebeb;
  } */
 
- .navi_bottom{
+.navi_bottom{
    position: absolute;
    top: 0;
- }
+}
+
+@keyframes bg_slide {
+     0% {
+         transform-origin: left top;
+         transform: scaleX(0.0);
+     }
+     100% {
+         transform-origin: left top;
+         transform: scaleX(1.0);
+     }
+}
+.bt-area a {
+     /* font-family: 'Roboto', sans-serif; */
+     font-size: 15px;
+     font-weight: 500;
+     color: #222222;
+     text-decoration: none;
+     letter-spacing: 0.2em;
+     display: block;
+     width: 100px;
+     padding: 9px 0 8px;
+     text-align: center;
+     box-sizing: border-box;
+     /* border: solid 1px #222222; */
+     transition: 0.3s;/*マウスホバー時の反映を滑らかに*/
+}
+.bt-area a:hover {
+    color: #ffffff;
+    position: relative;
+}
+.bt-area a:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #222222;
+    animation: bg_slide 0.4s;/*アニメーション設定追加*/
+}
 
 @media screen and (max-width: 480px) {
     #totop{
@@ -203,4 +284,142 @@ a.movie-btn:hover {
     .skills .sec-title {
         margin: 10px 0!important;
     }
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.one{
+  position: relative;
+  z-index: 30;
+}
+
+.btn-border-bottom {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0;
+  text-decoration: none;
+  color: rgba(0, 125, 150, 0.3);
+  cursor: pointer;
+}
+
+.btn-border-bottom:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:100%;
+  left: 0;
+  border-radius: 3px;
+  background:rgba(0, 125, 150, 0.3);
+  transition: .2s;
+}
+
+.btn-border-bottom:hover:before {
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
+}
+
+.btn-border-bottom-s {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: hsl(0, 0%, 50%);  /*文字色*/
+  padding: 0.25em 0;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn-border-bottom-s:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:100%;
+  left: 0;
+  border-radius: 3px;
+  background:rgba(0, 0, 0, 0.1);
+  transition: .2s;
+}
+
+.btn-border-bottom-s:hover:before {
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
+}
+
+.about-contents{
+  position: absolute;
+  z-index: 40;
+  top: 415px;
+  width: 100%;
+
+}
+
+.about{
+  position: absolute;
+  z-index: 40;
+  /* width: 100%; */
+  bottom: 80px;
+}
+
+.gyokan{
+  position: absolute;;
+  top: 40px;
+}
+
+
+.wave-view {
+  /* position: absolute; */
+
+  bottom: 0px;
+  /* top: -400px; */
+  left: 0;
+}
+
+.wave-view-box{
+  position: absolute;
+  height: 690px;
+  width: 100%;
+  bottom: 0px;
+  transform: translateY(200px);
+  transition: 1s;
+  opacity: 0;
+
+
+  z-index: 20;
+  /* transform-origin: 0px 0px; */
+  /* z-index: 1; */
+
+}
+.fadeout-anim {
+ opacity: 1;
+ transform: translateY(0px);
+}
+
+/*===========
+inview
+===========*/
+
+.fadeIn_up {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 1s;
+}
+.fadeIn_up.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: 2s;
+}
+.fadeIn.is-show {
+  opacity: 1;
 }

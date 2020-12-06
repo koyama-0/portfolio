@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="no-scroll">
   <head>
     <title>sachomaru</title>
     <meta charset="utf-8">
@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" media="screen">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
   </head>
-  <body>
+  <body class="no-scroll">
     <!-- メニューバー -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white nav-h fixed-top">
 
         <div class="container">
-            <a class="navbar-brand text-dark" href="#">home</a>
+            <div class="bt-area center">
+                <a href="#">home</a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,91 +29,312 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-dark" href="./about.html">about</a>
+                      <!-- <div class="bt-area center">
+                          <a href="./about.html">about</a>
+                      </div> -->
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-dark" href="./kako.html">works</a>
+                      <div class="bt-area center">
+                          <a href="./works.html">works</a>
+                      </div>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-dark" href="./study.html">study</a>
+                      <div class="bt-area center">
+                          <a href="./study.html">study</a>
+                      </div>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link text-dark" href="./design.html">design</a>
+                      <div class="bt-area center">
+                          <a href="./design.html">design</a>
+                      </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <br><br>
+    <br><br><br><br><br><br>
 
     <!-- profile -->
-    <section class="top py-5 my-5">
+    <section class="top py-5 my-2 one">
         <div class="container">
+
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-4 right_yose">
                   <div>
-                    <img src="./image/mypic.png" class="mypic" alt="mypic right_yose">
+                    <svg viewBox="0 0 283.46 283.46">
+                      <path fill="rgba(255, 255, 255, 0.5)">
+                        <animate attributeType="XML" attributeName="d" dur="25s" repeatCount="indefinite"
+                        values="M71.91,58.44c34.63-20.06,47.73-53.53,101.38-27.37c30.49,14.87,83.07,38.98,90.49,85.73
+                          c8.4,52.98-40.36,121.92-71.91,138.34c-36.13,18.8-72.1-5.81-105.49-10.3c-33.47-4.49-60.02-34.8-64.78-51.62
+                          C12.05,159.45-13.2,107.74,71.91,58.44z;
+
+                        M32.22,129.36c10.31-38.67-4.1-71.6,52.33-91.04c32.07-11.05,86.3-31.18,124.61-3.36
+                          c43.4,31.52,57.67,114.75,46.97,148.67c-12.25,38.84-55.09,46.87-81.87,67.31c-26.85,20.49-67.05,17.84-82.3,9.3
+                          C61.32,243.11,6.89,224.39,32.22,129.36z;
+
+                        M54.38,211.63C34.32,177,0.85,163.91,27.01,110.25c14.87-30.49,38.98-83.07,85.73-90.49
+                          c52.98-8.4,121.92,40.36,138.34,71.91c18.8,36.13-5.81,72.1-10.3,105.49c-4.49,33.47-34.8,60.02-51.62,64.78
+                          C155.39,271.49,103.67,296.74,54.38,211.63z;
+
+                        M127.34,252.12c-38.67-10.31-71.6,4.1-91.04-52.33c-11.05-32.07-31.18-86.3-3.36-124.61
+                          c31.52-43.4,114.75-57.67,148.67-46.97c38.84,12.25,46.87,55.09,67.31,81.87c20.49,26.85,17.84,67.05,9.3,82.3
+                          C241.09,223.03,222.37,277.45,127.34,252.12z;
+
+                          M209.61,229.97c-34.63,20.06-47.73,53.53-101.38,27.37c-30.49-14.87-83.07-38.98-90.49-85.73
+                            C9.34,118.62,58.1,49.68,89.66,33.26c36.13-18.8,72.1,5.81,105.49,10.3c33.47,4.49,60.02,34.8,64.78,51.62
+                            C269.47,128.96,294.72,180.68,209.61,229.97z;
+
+                          M257.86,157.26c-10.31,38.67,4.1,71.6-52.33,91.04c-32.07,11.05-86.3,31.18-124.61,3.36
+                            c-43.4-31.52-57.67-114.75-46.97-148.67c12.25-38.84,55.09-46.87,81.87-67.31c26.85-20.49,67.05-17.84,82.3-9.3
+                            C228.76,43.51,283.18,62.22,257.86,157.26z;
+
+                          M225.1,75.98c20.06,34.63,53.53,47.73,27.37,101.38c-14.87,30.49-38.98,83.07-85.73,90.49
+                            c-52.98,8.4-121.92-40.36-138.34-71.91c-18.8-36.13,5.81-72.1,10.3-105.49c4.49-33.47,34.8-60.02,51.62-64.78
+                            C124.09,16.12,175.8-9.13,225.1,75.98z;
+
+                          M154.18,36.29c38.67,10.31,71.6-4.1,91.04,52.33c11.05,32.07,31.18,86.3,3.36,124.61
+                            c-31.52,43.4-114.75,57.67-148.67,46.97c-38.84-12.25-46.87-55.09-67.31-81.87c-20.49-26.85-17.84-67.05-9.3-82.3
+                            C40.43,65.39,59.15,10.96,154.18,36.29z;
+
+                          M71.91,58.44c34.63-20.06,47.73-53.53,101.38-27.37c30.49,14.87,83.07,38.98,90.49,85.73
+                            c8.4,52.98-40.36,121.92-71.91,138.34c-36.13,18.8-72.1-5.81-105.49-10.3c-33.47-4.49-60.02-34.8-64.78-51.62
+                            C12.05,159.45-13.2,107.74,71.91,58.44z;" />
+                      </path>
+                      <clipPath id="c-myphoto">
+
+                        <path>
+                          <animate attributeType="XML" attributeName="d" dur="25s" repeatCount="indefinite"
+                          values="M127.34,252.12c-38.67-10.31-71.6,4.1-91.04-52.33c-11.05-32.07-31.18-86.3-3.36-124.61
+                          	c31.52-43.4,114.75-57.67,148.67-46.97c38.84,12.25,46.87,55.09,67.31,81.87c20.49,26.85,17.84,67.05,9.3,82.3
+                          	C241.09,223.03,222.37,277.45,127.34,252.12z;
+
+                            M209.61,229.97c-34.63,20.06-47.73,53.53-101.38,27.37c-30.49-14.87-83.07-38.98-90.49-85.73
+                            	C9.34,118.62,58.1,49.68,89.66,33.26c36.13-18.8,72.1,5.81,105.49,10.3c33.47,4.49,60.02,34.8,64.78,51.62
+                            	C269.47,128.96,294.72,180.68,209.61,229.97z;
+
+                            M257.86,157.26c-10.31,38.67,4.1,71.6-52.33,91.04c-32.07,11.05-86.3,31.18-124.61,3.36
+                            	c-43.4-31.52-57.67-114.75-46.97-148.67c12.25-38.84,55.09-46.87,81.87-67.31c26.85-20.49,67.05-17.84,82.3-9.3
+                            	C228.76,43.51,283.18,62.22,257.86,157.26z;
+
+                            M225.1,75.98c20.06,34.63,53.53,47.73,27.37,101.38c-14.87,30.49-38.98,83.07-85.73,90.49
+                            	c-52.98,8.4-121.92-40.36-138.34-71.91c-18.8-36.13,5.81-72.1,10.3-105.49c4.49-33.47,34.8-60.02,51.62-64.78
+                            	C124.09,16.12,175.8-9.13,225.1,75.98z;
+
+                            M154.18,36.29c38.67,10.31,71.6-4.1,91.04,52.33c11.05,32.07,31.18,86.3,3.36,124.61
+                            	c-31.52,43.4-114.75,57.67-148.67,46.97c-38.84-12.25-46.87-55.09-67.31-81.87c-20.49-26.85-17.84-67.05-9.3-82.3
+                            	C40.43,65.39,59.15,10.96,154.18,36.29z;
+
+                            M71.91,58.44c34.63-20.06,47.73-53.53,101.38-27.37c30.49,14.87,83.07,38.98,90.49,85.73
+                            	c8.4,52.98-40.36,121.92-71.91,138.34c-36.13,18.8-72.1-5.81-105.49-10.3c-33.47-4.49-60.02-34.8-64.78-51.62
+                            	C12.05,159.45-13.2,107.74,71.91,58.44z;
+
+                            M32.22,129.36c10.31-38.67-4.1-71.6,52.33-91.04c32.07-11.05,86.3-31.18,124.61-3.36
+                            	c43.4,31.52,57.67,114.75,46.97,148.67c-12.25,38.84-55.09,46.87-81.87,67.31c-26.85,20.49-67.05,17.84-82.3,9.3
+                            	C61.32,243.11,6.89,224.39,32.22,129.36z;
+
+                            M54.38,211.63C34.32,177,0.85,163.91,27.01,110.25c14.87-30.49,38.98-83.07,85.73-90.49
+                            	c52.98-8.4,121.92,40.36,138.34,71.91c18.8,36.13-5.81,72.1-10.3,105.49c-4.49,33.47-34.8,60.02-51.62,64.78
+                            	C155.39,271.49,103.67,296.74,54.38,211.63z;
+
+                            M127.34,252.12c-38.67-10.31-71.6,4.1-91.04-52.33c-11.05-32.07-31.18-86.3-3.36-124.61
+                            	c31.52-43.4,114.75-57.67,148.67-46.97c38.84,12.25,46.87,55.09,67.31,81.87c20.49,26.85,17.84,67.05,9.3,82.3
+                            	C241.09,223.03,222.37,277.45,127.34,252.12z" />
+                        </path>
+                      </clipPath>
+                      <image xlink:href="./image/myphoto.JPG" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#c-myphoto)"/>
+                    </svg>
                   </div>
                 </div>
-                <div class="col-md-4 tb_center">
+                <div class="col-md-4 myname">
                   <div>
-                    <!-- <h1 class="font_space_name">KOYAMA SAKI</h1>
-                    <h5 class="font_space_name">PORTFOLIO</h5> -->
-                    <h1 class="font_space_name">koyama saki</h1>
-                    <h5 class="font_space_name">portfolio</h5>
-                    <a href="./about.html" class="btn movie-btn btn--cubic movie-modal-open center">　▷ about　　</a>
+                    <br>
+                    <h6 class="text-white wf-roundedmplus1c">　こ や ま　　　　　　さ き</h6>
+                    <h1 class="font_space_name hover-white">koyama saki</h1>
+                    <div class="sns">
+                      <span>
+                        <a href="https://twitter.com/sach0maru/" class="twitter-a">
+                          <img src="./image/twitter.svg" class="twitter" width="30" height="30">
+                        </a>
+                      </span>
+                      <span>
+                        <a href="https://www.instagram.com/sachomaru/">
+                          <img src="./image/insta.svg" class="insta" width="30" height="30">
+                        </a>
+                      </span>
+                    </div>
+                    <br>
+                    <div class="profile">
+                      <p class="text-white wf-roundedmplus1c">2018　　鳥羽商船高等専門学校卒業<br>
+                        2020　　豊橋技術科学大学 大学院<br>
+                        　　　　インタラクションデザイン研究室所属</p>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-2 tb_center"></div>
             </div>
         </div>
-    </section>
-    <!-- product -->
-    <section class="works box">
-        <div class="container works-f">
-            <h2 class="text-center mt-5 mb-3 text-gray font_space_sub">products</h2>
-            <br>
-            <div class="row product">
-              <div class="col-md-1 center"></div>
-              <div class="col-md-2 center">
-                <div class="product">
-                  <a class ="Link" href="./kako.html">
-                    <div class="button_circle">
-                      <img src="./image/p-kako.png" alt="..." width="40%">
-                    </div>
-                  </a>
-                </div>
-                <h6 class="text-gray font_space_title">works</h6>
-                <br>
-              </div>
-              <div class="col-md-2 center">
-                <div class="product">
-                  <a class ="Link" href="./study.html">
-                    <div class="button_circle">
-                      <img src="./image/p-study.png" alt="..." width="50%">
-                    </div>
-                  </a>
-                </div>
-                <h6 class="text-gray font_space_title">study</h6>
-                <br>
-              </div>
-              <div class="col-md-2 center">
-                <div class="product">
-                  <a class ="Link" href="./design.html">
-                    <div class="button_circle">
-                      <img src="./image/p-design.png" alt="..." width="50%">
-                    </div>
-                  </a>
-                </div>
-                <h6 class="text-gray font_space_title">design</h6>
-                <br>
-              </div>
-              <div class="col-md-1 center"></div>
+        <!-- <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <img class="tb_center" src="./image/design.png" alt="..." width="100%">
             </div>
-        </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+              <img class="tb_center" src="./image/coding.png" alt="..." width="100%">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+              <img class="tb_center" src="./image/prezen.png" alt="..." width="100%">
+            </div>
+            <div class="col-md-2"></div>
+        </div> -->
     </section>
+    <div class="wave-view-box">
+        <svg class="wave-view" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" data-aos="fade-up">
+          <path fill="rgba(0, 125, 150, 0.3)">
+            <animate dur="5s" repeatCount="indefinite" attributeName="d" attributeType="XML" values="
+              M1920.5,28.1c-55.6,14.7-90.5,16.5-144,0c-49.9-15.4-70.8-6.4-121.1,4.7c-52.3,11.6-73.9-24.9-122-31.7
+                c-41.2-5.9-69.6,35.3-110.5,35.1c-39.2-0.1-48.4-18.1-99.7-18.1c-60.2,0-89.3,23.5-132.7,10.4c-50.7-15.3-75.5-20.6-124.5-6.3
+                c-50.6,14.8-91,5.9-140.1-8c-93.8-26.5-163,15-254.5,16.9C592,32.7,525-7.1,442.9,13.3c-86.5,21.5-151,26.2-239.1,2.4
+                C138.3-2,58.7-8.4,0.5,28.1v2590.3h1920V28.1z;
+
+              M1920.5,26.1c-55.6,14.7-95.5,18.5-149,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-24.9-134-31.7
+              	c-41.2-5.9-67.6,35.3-108.5,35.1c-39.2-0.1-48.4-19.1-99.7-19.1c-60.2,0-89.3,24.5-132.7,11.4c-50.7-15.3-75.5-20.6-124.5-6.3
+              	c-50.6,14.8-111,2.9-160.1-11c-93.8-26.5-143,15-234.5,16.9C582,29.7,495-8.1,412.9,12.3c-86.5,21.5-133,35.2-221.1,11.4
+              	C126.3,6,58.7-10.4,0.5,26.1v2766.4h1920V26.1z;
+
+              M1920.5,23.8c-55.6,14.7-115.5,18.5-169,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-18.9-134-25.7
+                c-41.6-5.9-67.6,27.3-108.5,27.1c-39.2-0.1-51.4-17.1-102.7-17.1c-60.2,0-83.3,27.5-126.7,14.4C1112.8,13.9,1090,1.6,1041,15.9
+              	c-50.6,14.8-106,6.9-155.1-7c-93.8-26.5-153,18-244.5,19.9C562,30.4,479-7.4,396.9,13c-86.5,21.5-137,29.2-225.1,5.4
+              	C106.3,0.7,58.7-12.7,0.5,23.8v3096.1h1920V23.8z;
+
+              M1920.5,26.1c-55.6,14.7-95.5,18.5-149,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-24.9-134-31.7
+              	c-41.2-5.9-67.6,35.3-108.5,35.1c-39.2-0.1-48.4-19.1-99.7-19.1c-60.2,0-89.3,24.5-132.7,11.4c-50.7-15.3-75.5-20.6-124.5-6.3
+              	c-50.6,14.8-111,2.9-160.1-11c-93.8-26.5-143,15-234.5,16.9C582,29.7,495-8.1,412.9,12.3c-86.5,21.5-133,35.2-221.1,11.4
+              	C126.3,6,58.7-10.4,0.5,26.1v2950.6h1920V26.1z;
+
+              M1920.5,28.1c-55.6,14.7-90.5,16.5-144,0c-49.9-15.4-70.8-6.4-121.1,4.7c-52.3,11.6-73.9-24.9-122-31.7
+              	c-41.2-5.9-69.6,35.3-110.5,35.1c-39.2-0.1-48.4-18.1-99.7-18.1c-60.2,0-89.3,23.5-132.7,10.4c-50.7-15.3-75.5-20.6-124.5-6.3
+              	c-50.6,14.8-91,5.9-140.1-8c-93.8-26.5-163,15-254.5,16.9C592,32.7,525-7.1,442.9,13.3c-86.5,21.5-151,26.2-239.1,2.4
+              	C138.3-2,58.7-8.4,0.5,28.1v2590.3h1920V28.1z;">
+            </animate>
+          </path>
+          <path fill="rgba(50, 125, 150, 0.2)">
+            <animate dur="7s" repeatCount="indefinite" attributeName="d" attributeType="XML" values="
+              M1920.5,23.8c-55.6,14.7-115.5,18.5-169,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-18.9-134-25.7
+                c-41.6-5.9-67.6,27.3-108.5,27.1c-39.2-0.1-51.4-17.1-102.7-17.1c-60.2,0-83.3,27.5-126.7,14.4C1112.8,13.9,1090,1.6,1041,15.9
+                c-50.6,14.8-106,6.9-155.1-7c-93.8-26.5-153,18-244.5,19.9C562,30.4,479-7.4,396.9,13c-86.5,21.5-137,29.2-225.1,5.4
+                C106.3,0.7,58.7-12.7,0.5,23.8v3096.1h1920V23.8z;
+
+              M1920.5,23.8c-55.6,14.7-115.5,18.5-169,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-18.9-134-25.7
+                c-41.6-5.9-67.6,27.3-108.5,27.1c-39.2-0.1-51.4-17.1-102.7-17.1c-60.2,0-83.3,27.5-126.7,14.4C1112.8,13.9,1090,1.6,1041,15.9
+              	c-50.6,14.8-106,6.9-155.1-7c-93.8-26.5-153,18-244.5,19.9C562,30.4,479-7.4,396.9,13c-86.5,21.5-137,29.2-225.1,5.4
+              	C106.3,0.7,58.7-12.7,0.5,23.8v3096.1h1920V23.8z;
+
+              M1920.5,28.1c-55.6,14.7-90.5,16.5-144,0c-49.9-15.4-70.8-6.4-121.1,4.7c-52.3,11.6-73.9-24.9-122-31.7
+                c-41.2-5.9-69.6,35.3-110.5,35.1c-39.2-0.1-48.4-18.1-99.7-18.1c-60.2,0-89.3,23.5-132.7,10.4c-50.7-15.3-75.5-20.6-124.5-6.3
+                c-50.6,14.8-91,5.9-140.1-8c-93.8-26.5-163,15-254.5,16.9C592,32.7,525-7.1,442.9,13.3c-86.5,21.5-151,26.2-239.1,2.4
+                C138.3-2,58.7-8.4,0.5,28.1v2590.3h1920V28.1z;
+
+              M1920.5,23.8c-55.6,14.7-115.5,18.5-169,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-18.9-134-25.7
+                c-41.6-5.9-67.6,27.3-108.5,27.1c-39.2-0.1-51.4-17.1-102.7-17.1c-60.2,0-83.3,27.5-126.7,14.4C1112.8,13.9,1090,1.6,1041,15.9
+              	c-50.6,14.8-106,6.9-155.1-7c-93.8-26.5-153,18-244.5,19.9C562,30.4,479-7.4,396.9,13c-86.5,21.5-137,29.2-225.1,5.4
+              	C106.3,0.7,58.7-12.7,0.5,23.8v3096.1h1920V23.8z;">
+            </animate>
+          </path>
+        </svg>
+        <div class="about-contents">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+              <div>
+                <h5 class="text-white font_space_sub">forte</h5>
+              </div>
+              <p class="text-white gyokan wf-roundedmplus1c">コーディング<br>デザイン<br>プレゼンテーション</p>
+            </div>
+            <div class="col-md-3">
+              <div>
+                <h5 class="text-white font_space_sub">experienced</h5>
+              </div>
+              <p class="text-white gyokan font_space_sub">C , C++ , Objective-c , Swift ,<br> HTML , PHP , javaScript , Python<br>
+                Illastrator , Photoshop , fusion360</p>
+            </div>
+            <div class="col-md-3">
+              <div>
+                <h5 class="text-white font_space_sub">like</h5>
+              </div>
+              <p class="text-white gyokan font_space_sub">猫<br>ホラー映画<br>Crystal Geyser</p>
+            </div>
+            <div class="col-md-1 tb_center"></div>
+          </div>
+        </div>
+    </div>
+    <div class="center">
+      <a id="about" class="text-gray font_space_title about ab-click btn-border-bottom">▷ about</a>
+    </div>
+    <div id="wave-bottom" class="">
+      <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 50" enable-background="new 0 0 1000 50" xml:space="preserve" data-aos="fade-up">
+        <path fill="rgba(0, 125, 150, 0.3)">
+          <animate dur="5s" repeatCount="indefinite" attributeName="d" attributeType="XML" values="
+            M1920.5,28.1c-55.6,14.7-90.5,16.5-144,0c-49.9-15.4-70.8-6.4-121.1,4.7c-52.3,11.6-73.9-24.9-122-31.7
+      			c-41.2-5.9-69.6,35.3-110.5,35.1c-39.2-0.1-48.4-18.1-99.7-18.1c-60.2,0-89.3,23.5-132.7,10.4c-50.7-15.3-75.5-20.6-124.5-6.3
+      			c-50.6,14.8-91,5.9-140.1-8c-93.8-26.5-163,15-254.5,16.9C592,32.7,525-7.1,442.9,13.3c-86.5,21.5-151,26.2-239.1,2.4
+      			C138.3-2,58.7-8.4,0.5,28.1v29h1920V28.1z;
+
+            M1920.5,26.1c-55.6,14.7-95.5,18.5-149,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-24.9-134-31.7
+      			c-41.2-5.9-67.6,35.3-108.5,35.1c-39.2-0.1-48.4-19.1-99.7-19.1c-60.2,0-89.3,24.5-132.7,11.4c-50.7-15.3-75.5-20.6-124.5-6.3
+      			c-50.6,14.8-111,2.9-160.1-11c-93.8-26.5-143,15-234.5,16.9C582,29.7,495-8.1,412.9,12.3c-86.5,21.5-133,35.2-221.1,11.4
+      			C126.3,6,58.7-10.4,0.5,26.1v29h1920V26.1z;
+
+            M1920.5,23.8c-55.6,14.7-115.5,18.5-169,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-18.9-134-25.7
+      			c-41.6-5.9-67.6,27.3-108.5,27.1c-39.2-0.1-51.4-17.1-102.7-17.1c-60.2,0-83.3,27.5-126.7,14.4C1112.8,13.9,1090,1.6,1041,15.9
+      			c-50.6,14.8-106,6.9-155.1-7c-93.8-26.5-153,18-244.5,19.9C562,30.4,479-7.4,396.9,13c-86.5,21.5-137,29.2-225.1,5.4
+      			C106.3,0.7,58.7-12.7,0.5,23.8v29h1920V23.8z;
+
+            M1920.5,26.1c-55.6,14.7-95.5,18.5-149,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-24.9-134-31.7
+      			c-41.2-5.9-67.6,35.3-108.5,35.1c-39.2-0.1-48.4-19.1-99.7-19.1c-60.2,0-89.3,24.5-132.7,11.4c-50.7-15.3-75.5-20.6-124.5-6.3
+      			c-50.6,14.8-111,2.9-160.1-11c-93.8-26.5-143,15-234.5,16.9C582,29.7,495-8.1,412.9,12.3c-86.5,21.5-133,35.2-221.1,11.4
+      			C126.3,6,58.7-10.4,0.5,26.1v29h1920V26.1z;
+
+            M1920.5,28.1c-55.6,14.7-90.5,16.5-144,0c-49.9-15.4-70.8-6.4-121.1,4.7c-52.3,11.6-73.9-24.9-122-31.7
+      			c-41.2-5.9-69.6,35.3-110.5,35.1c-39.2-0.1-48.4-18.1-99.7-18.1c-60.2,0-89.3,23.5-132.7,10.4c-50.7-15.3-75.5-20.6-124.5-6.3
+      			c-50.6,14.8-91,5.9-140.1-8c-93.8-26.5-163,15-254.5,16.9C592,32.7,525-7.1,442.9,13.3c-86.5,21.5-151,26.2-239.1,2.4
+      			C138.3-2,58.7-8.4,0.5,28.1v29h1920V28.1z;">
+          </animate>
+        </path>
+        <path fill="rgba(50, 125, 150, 0.2)">
+          <animate dur="7s" repeatCount="indefinite" attributeName="d" attributeType="XML" values="
+            M1920.5,23.8c-55.6,14.7-115.5,18.5-169,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-18.9-134-25.7
+      			c-41.6-5.9-67.6,27.3-108.5,27.1c-39.2-0.1-51.4-17.1-102.7-17.1c-60.2,0-83.3,27.5-126.7,14.4C1112.8,13.9,1090,1.6,1041,15.9
+      			c-50.6,14.8-106,6.9-155.1-7c-93.8-26.5-153,18-244.5,19.9C562,30.4,479-7.4,396.9,13c-86.5,21.5-137,29.2-225.1,5.4
+      			C106.3,0.7,58.7-12.7,0.5,23.8v29h1920V23.8z;
+
+            M1920.5,26.1c-55.6,14.7-95.5,18.5-149,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-24.9-134-31.7
+      			c-41.2-5.9-67.6,35.3-108.5,35.1c-39.2-0.1-48.4-19.1-99.7-19.1c-60.2,0-89.3,24.5-132.7,11.4c-50.7-15.3-75.5-20.6-124.5-6.3
+      			c-50.6,14.8-111,2.9-160.1-11c-93.8-26.5-143,15-234.5,16.9C582,29.7,495-8.1,412.9,12.3c-86.5,21.5-133,35.2-221.1,11.4
+      			C126.3,6,58.7-10.4,0.5,26.1v29h1920V26.1z;
+
+            M1920.5,28.1c-55.6,14.7-90.5,16.5-144,0c-49.9-15.4-70.8-6.4-121.1,4.7c-52.3,11.6-73.9-24.9-122-31.7
+      			c-41.2-5.9-69.6,35.3-110.5,35.1c-39.2-0.1-48.4-18.1-99.7-18.1c-60.2,0-89.3,23.5-132.7,10.4c-50.7-15.3-75.5-20.6-124.5-6.3
+      			c-50.6,14.8-91,5.9-140.1-8c-93.8-26.5-163,15-254.5,16.9C592,32.7,525-7.1,442.9,13.3c-86.5,21.5-151,26.2-239.1,2.4
+      			C138.3-2,58.7-8.4,0.5,28.1v29h1920V28.1z;
+
+            M1920.5,26.1c-55.6,14.7-95.5,18.5-149,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-24.9-134-31.7
+      			c-41.2-5.9-67.6,35.3-108.5,35.1c-39.2-0.1-48.4-19.1-99.7-19.1c-60.2,0-89.3,24.5-132.7,11.4c-50.7-15.3-75.5-20.6-124.5-6.3
+      			c-50.6,14.8-111,2.9-160.1-11c-93.8-26.5-143,15-234.5,16.9C582,29.7,495-8.1,412.9,12.3c-86.5,21.5-133,35.2-221.1,11.4
+      			C126.3,6,58.7-10.4,0.5,26.1v29h1920V26.1z;
+
+            M1920.5,23.8c-55.6,14.7-115.5,18.5-169,2c-49.9-15.4-65.8-6.4-116.1,4.7c-52.3,11.6-85.9-18.9-134-25.7
+      			c-41.6-5.9-67.6,27.3-108.5,27.1c-39.2-0.1-51.4-17.1-102.7-17.1c-60.2,0-83.3,27.5-126.7,14.4C1112.8,13.9,1090,1.6,1041,15.9
+      			c-50.6,14.8-106,6.9-155.1-7c-93.8-26.5-153,18-244.5,19.9C562,30.4,479-7.4,396.9,13c-86.5,21.5-137,29.2-225.1,5.4
+      			C106.3,0.7,58.7-12.7,0.5,23.8v29h1920V23.8z;">
+          </animate>
+        </path>
+      </svg>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -118,9 +344,93 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="js/jquery-3.5.1.min.js" defer></script>
-    <script src="js/slick.min.js" defer></script>
-    <script src="js/scripts.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+    <!-- <script src="js/jquery-3.5.1.min.js" defer></script> -->
+    <!-- <script src="js/slick.min.js" defer></script> -->
+    <!-- <script src="js/scripts.js" defer></script> -->
+    <!-- JS読み込み -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 初期化する -->
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+
+      $(document).on('click', '.ab-click', function(){
+        $(".wave-view-box").addClass('fadeout-anim');
+        console.log("click");
+        $(".hover-white").css("color", "white");
+        $(".hover-white").text("小 山　紗 希");
+        $(".hover-white").addClass('wf-roundedmplus1c');
+        $(".about").css("color", "white");
+        $(".about").text("× close");
+
+        $(".sns").addClass('display-none');
+        $(".profile").removeClass('display-none');
+
+        $(this).addClass('cl-click');
+        $(this).removeClass('ab-click');
+      });
+      $(document).on('click', '.cl-click', function(){
+        console.log("clicked");
+        $('.wave-view-box').removeClass('fadeout-anim');
+        $(".hover-white").css("color", "black");
+        $(".hover-white").text("koyama saki");
+        $(".hover-white").removeClass('wf-roundedmplus1c');
+        $("#about").css("color", "black");
+        $("#about").text("▷ about");
+
+        $(".sns").removeClass('display-none');
+        $(".profile").addClass('display-none');
+
+        $(this).addClass('ab-click');
+        $(this).removeClass('cl-click');
+      });
+
+
+
+
+      //
+      //
+      // // $(function(){
+      // //
+      // // });
+      // //
+      // //       function() {
+      //
+      // //         }
+      // //     );
+      //
+      // $(".about-click").click(function() {
+      //         $(".wave-view-box").addClass('fadeout-anim');
+      //         console.log("hover");
+      //         $('#wave-bottom').removeClass('fadeout-anim');
+      //         $(".hover-white").css("color", "white");
+      //         $(".hover-white").text("小 山　紗 希");
+      //         $(".about").css("color", "white");
+      //         $(".about").text("×close");
+      //
+      //         var id=$("#about").attr('id', 'close');
+      //         console.log(id);
+      //   });
+      //
+      //   $(".close-click").click(function() {
+      //         $(".hover-white").css("color", "black");
+      //         $('.wave-view-box').removeClass('fadeout-anim')
+      //         $(".hover-white").text("koyama saki");
+      //         $(".about").css("color", "black");
+      //         $(".about").text("▷about");
+      //
+      //         $("#close").attr('id', 'about');
+      //         console.log("close");
+      //   });
+      //
+
+
+    </script>
+
+
 
   </body>
 </html>
