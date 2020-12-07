@@ -240,50 +240,50 @@ a.movie-btn:hover {
 }
 
 @media screen and (max-width: 480px) {
-    #totop{
+    /* #totop{
         position: fixed;
         width: 40px!important;
         height: auto;
         bottom: 20px!important;
         right: 20px!important;
         cursor: pointer;
-    }
-    .mypic {
+    } */
+    /* .mypic {
         width: 400px;
-    }
-    .title{
+    } */
+    /* .title{
         margin: 0 20px 0 20px;
-    }
-    .twitter-top{
+    } */
+    /* .twitter-top{
         margin-bottom: 20px;
-    }
-    .triangle1 {
+    } */
+    /* .triangle1 {
         border-bottom: transparent!important;
-    }
-    .card {
+    } */
+    /* .card {
         margin-bottom: 40px;
-    }
-    .works {
+    } */
+    /* .works {
         margin-bottom: 30px!important;
         padding-bottom: 0!important;
-    }
-    .contact {
+    } */
+    /* .contact {
         margin: 20px 0!important;
         padding: 10px 0!important;
-    }
-    .contact h2 {
+    } */
+    /* .contact h2 {
         margin-top: 10px!important;
-    }
-    footer .copyright {
+    } */
+    /* footer .copyright {
         text-align: center!important;
-    }
-    .skills {
+    } */
+    /* .skills {
         margin: 10px 0 30px 0!important;
         padding: 10px 0!important;
-    }
-    .skills .sec-title {
+    } */
+    /* .skills .sec-title {
         margin: 10px 0!important;
-    }
+    } */
 }
 
 .wave {
@@ -422,4 +422,15 @@ inview
 }
 .fadeIn.is-show {
   opacity: 1;
+}
+
+
+/* pc sp */
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
 }
