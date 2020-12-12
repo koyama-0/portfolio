@@ -20,6 +20,15 @@
 .wf-mplus1p { font-family: "M PLUS 1p"; }
 .wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
 .kosugimaru { font-family: 'Kosugi Maru', sans-serif; }
+
+.thin { font-weight: 100; }
+.light { font-weight: 300; }
+.regular { font-weight: 400; }
+.medium { font-weight: 500; }
+.bold { font-weight: 700; }
+.extrabold { font-weight: 800; }
+.black { font-weight: 900; }
+
 @font-face {
   font-family:'mameron';
   src:url("./font/Mamelon.woff2") format('woff2');
@@ -361,11 +370,23 @@ a.movie-btn:hover {
 
 }
 
+.movie-contents{
+  position: absolute;
+  z-index: 50;
+  top: 150px;
+  width: 100%;
+}
+
 .about{
   position: absolute;
   z-index: 40;
   /* width: 100%; */
   bottom: 80px;
+}
+
+.hight-layer{
+  /* position: absolute; */
+  z-index: 50;
 }
 
 .gyokan{
@@ -383,6 +404,22 @@ a.movie-btn:hover {
 }
 
 .wave-view-box{
+  position: absolute;
+  height: 690px;
+  width: 100%;
+  bottom: 0px;
+  transform: translateY(200px);
+  transition: 1s;
+  opacity: 0;
+
+
+  z-index: 20;
+  /* transform-origin: 0px 0px; */
+  /* z-index: 1; */
+
+}
+
+.movie-view-box{
   position: absolute;
   height: 690px;
   width: 100%;
