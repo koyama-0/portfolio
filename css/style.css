@@ -34,8 +34,9 @@
   src:url("./font/Mamelon.woff2") format('woff2');
 }
 
-.mameron{
-  font-family: 'mameron';
+.hanamaru-app{
+  position: absolute;
+  z-index: 40;
 }
 
 .no-scroll{

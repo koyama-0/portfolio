@@ -90,7 +90,17 @@
               <div class="center">
                 <img class="center" src="./image/hanamaru.jpg" alt="..." width="90%" style="border:1px solid hsl(0, 0%, 50%)">
               </div>
-              <h5 class="mt-3 mb-3 text-gray center font_space_sub wf-roundedmplus1c black">はなまるフォーム</h5>
+              <div class="row">
+
+                <h5 class="col-md-8 mt-3 mb-3 text-gray right font_space_sub wf-roundedmplus1c black">はなまるフォーム</h5>
+                <div class="col-md-4 mt-3">
+                  <a href="https://apps.apple.com/jp/app/はなまるフォーム/id1151310209" class="hanamaru-app">
+                    <img src="./image/appstore.png" class="" height="20">
+                  </a>
+                </div>
+              </div>
+
+
               <div class="ml-4">
 
                 <!-- <hr style="border:0 border-top:3px solid hsl(0, 0%, 50%)"> -->
@@ -305,7 +315,7 @@
             </animate>
           </path>
         </svg>
-        <div class="movie-contents">
+        <div class="g-movie-view movie-contents display-none">
           <div class="center">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/cuJtD8JOUyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -457,6 +467,8 @@
 
         $(".step-mb").addClass('display-none');
         $(".hana-mb").addClass('display-none');
+
+        $(".g-movie-view").removeClass('display-none');
       });
       $(document).on('click', '.cl-g-click', function(){
         // console.log("clicked");
@@ -468,6 +480,8 @@
 
         $(".step-mb").removeClass('display-none');
         $(".hana-mb").removeClass('display-none');
+
+        $(".g-movie-view").addClass('display-none');
       });
     </script>
 
