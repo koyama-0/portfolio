@@ -94,7 +94,7 @@
 
                 <h5 class="col-md-8 mt-3 mb-3 text-gray right font_space_sub wf-roundedmplus1c black">はなまるフォーム</h5>
                 <div class="col-md-4 mt-3">
-                  <a href="https://apps.apple.com/jp/app/はなまるフォーム/id1151310209" class="hanamaru-app">
+                  <a id="hana-app" href="https://apps.apple.com/jp/app/はなまるフォーム/id1151310209" class="hanamaru-app">
                     <img src="./image/appstore.png" class="" height="20">
                   </a>
                 </div>
@@ -415,6 +415,8 @@
 
         $(".hana-mb").addClass('display-none');
         $(".gurumi-mb").addClass('display-none');
+
+        $(".hanamaru-app").addClass('display-none');
       });
       $(document).on('click', '.cl-s-click', function(){
         console.log("clicked");
@@ -426,6 +428,7 @@
 
         $(".hana-mb").removeClass('display-none');
         $(".gurumi-mb").removeClass('display-none');
+        $(".hanamaru-app").removeClass('display-none');
       });
 
 
@@ -441,6 +444,7 @@
 
         $(".step-mb").addClass('display-none');
         $(".gurumi-mb").addClass('display-none');
+        $(".hanamaru-app").addClass('display-none');
       });
       $(document).on('click', '.cl-h-click', function(){
         // console.log("clicked");
@@ -452,6 +456,7 @@
 
         $(".step-mb").removeClass('display-none');
         $(".gurumi-mb").removeClass('display-none');
+        $(".hanamaru-app").removeClass('display-none');
       });
 
 
@@ -469,6 +474,7 @@
         $(".hana-mb").addClass('display-none');
 
         $(".g-movie-view").removeClass('display-none');
+        $(".hanamaru-app").addClass('display-none');
       });
       $(document).on('click', '.cl-g-click', function(){
         // console.log("clicked");
@@ -482,6 +488,7 @@
         $(".hana-mb").removeClass('display-none');
 
         $(".g-movie-view").addClass('display-none');
+        $(".hanamaru-app").removeClass('display-none');
       });
     </script>
 
