@@ -406,7 +406,8 @@ a.movie-btn:hover {
 
 .wave-view-box{
   position: absolute;
-  height: 690px;
+  /* height: 690px; */
+  height: 85%;
   width: 100%;
   bottom: 0px;
   transform: translateY(200px);
