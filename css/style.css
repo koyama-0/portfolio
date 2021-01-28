@@ -125,6 +125,31 @@ a.movie-btn:hover {
 .works_bottom{
   height: 400px
 }
+
+
+.works-movie {
+  display: inline-block;
+  cursor       : pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  text-align:center;
+  line-height: 80px;
+  transition   : .3s;
+  border: dashed 1px black;
+}
+.works-movie:hover .movie-text{
+  color : black;
+}
+
+.works-movie:hover{
+  background-color : white;
+
+}
+
+
+
 .myname {
   display: flex;
   top: 70px;
@@ -461,6 +486,17 @@ inview
 }
 .fadeIn.is-show {
   opacity: 1;
+}
+
+.works-b {
+  border: solid 1px hsl(0, 0%, 50%);
+  display      : inline-block;
+  border-radius: 50%;                  /* 角丸 */
+  cursor       : pointer;              /* カーソル形状 */
+  transition   : .3s;                  /* なめらか変化 */
+}
+.works-b:hover {
+  background-color: black;              /* 影の設定 */
 }
 
 
