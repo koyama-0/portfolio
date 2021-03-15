@@ -21,6 +21,8 @@
 .wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
 .kosugimaru { font-family: 'Kosugi Maru', sans-serif; }
 
+.shippori { font-family: 'Shippori Mincho', serif; }
+
 .thin { font-weight: 100; }
 .light { font-weight: 300; }
 .regular { font-weight: 400; }
@@ -32,6 +34,57 @@
 @font-face {
   font-family:'mameron';
   src:url("./font/Mamelon.woff2") format('woff2');
+}
+
+.vertical {
+        writing-mode: vertical-rl;
+}
+
+.absolute_parent {
+    position:  relative;        /* 要素の配置方法をと子要素の起点を指定 */
+    /* left:  30px;                /* 左からの表示位置 */
+    top: 0px;                  /* 上からの表示位置 */
+    /* border: solid 2px red;      /* 枠線指定 */
+    width : 100vw ;
+    height : 52vw;
+}
+
+.absolute_subtitle {
+    position:  absolute;        /* 要素の配置方法を指定 */
+    /* background-color: #ccc;     /* 背景色指定 */
+    padding:  20px;             /* 余白指定 */
+    /* left:  ;                /* 右からの位置指定 */
+    top: 33%;                  /* 上からの位置指定 */
+    width : 10% ;
+    height : 40%;
+}
+.absolute_main {
+  position:  absolute;
+  /* background-color: #bbb; */
+  top:8%;
+  width : 45% ;
+  /* height : 100%; */
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.design_font_tex{
+  font-size:1px;
+  line-height:20px;
+  line-height:17px;
+}
+
+.design_font_title{
+  letter-spacing: 10px;
+  font-size:25px;
+  line-height:20px;
+}
+.design_font_title_e{
+  color: hsl(0, 0%, 50%);  /*文字色*/
+  letter-spacing: 10px; /*文字間隔*/
+  font-size:15px;       /*文字大きさ*/
+  line-height:10px;     /*行間*/
 }
 
 .hanamaru-app{
