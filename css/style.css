@@ -22,6 +22,7 @@
 .kosugimaru { font-family: 'Kosugi Maru', sans-serif; }
 
 .shippori { font-family: 'Shippori Mincho', serif; }
+.sawarabi { font-family: 'Sawarabi Mincho', sans-serif; }
 
 .thin { font-weight: 100; }
 .light { font-weight: 300; }
@@ -46,7 +47,7 @@
     top: 0px;                  /* 上からの表示位置 */
     /* border: solid 2px red;      /* 枠線指定 */
     width : 100vw ;
-    height : 52vw;
+    height : 60vw;        /*bimyou*/
 }
 
 .absolute_subtitle {
@@ -69,22 +70,68 @@
   margin: auto;
 }
 
+.absolute_concept {
+  position:  relative;        /* 要素の配置方法を指定 */
+  /* background-color: #ccc;     /* 背景色指定 */
+  /* padding:  20px;             /* 余白指定 */
+  /* left:  ;                /* 右からの位置指定 */
+  top: 10%;                  /* 上からの位置指定 */
+  width : 25% ;
+  height : 5%;
+}
+
 .design_font_tex{
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 300;
   font-size:1px;
-  line-height:20px;
-  line-height:17px;
+  line-height:15px;
+  letter-spacing: 1px; /*文字間隔*/
+  color: hsl(0, 0%, 10%);
+}
+.design_font_tex_m{
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: 'M PLUS Rounded 1c';
+  font-weight: 400;
+  font-size:1px;
+  line-height:15px;
 }
 
 .design_font_title{
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 300;
+  color: hsl(0, 0%, 10%);  /*文字色*/
   letter-spacing: 10px;
   font-size:25px;
   line-height:20px;
 }
 .design_font_title_e{
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 400;
   color: hsl(0, 0%, 50%);  /*文字色*/
   letter-spacing: 10px; /*文字間隔*/
   font-size:15px;       /*文字大きさ*/
-  line-height:10px;     /*行間*/
+  line-height:15px;     /*行間*/
+}
+
+.design_font_concept{
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 400;
+  letter-spacing: 10px; /*文字間隔*/
+  font-size:20px;       /*文字大きさ*/
+  line-height:15px;     /*行間*/
+  position:absolute;
+  top:15%;
+  right:0%;
+}
+
+.design_font_komidashi_tex{
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 400;
+  letter-spacing: 6px; /*文字間隔*/
+  font-size:17px;       /*文字大きさ*/
 }
 
 .hanamaru-app{
