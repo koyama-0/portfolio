@@ -134,6 +134,85 @@
   font-size:17px;       /*文字大きさ*/
 }
 
+
+.study_tex_1{
+  font-family: "M PLUS 1p";
+  font-weight: 900;
+  letter-spacing: 4px; /*文字間隔*/
+  font-size:20px;       /*文字大きさ*/
+}
+
+.study_tex_2{
+  font-family: "M PLUS 1p";
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size:15px;
+}
+
+.study_tex_3{
+  font-family: "M PLUS 1p";
+  font-weight: 100;
+  font-size:13px;       /*文字大きさ*/
+  color: hsl(0, 0%, 50%);  /*文字色*/
+}
+
+.study_box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: hsl(0, 0%, 80%);
+    border-radius: 9px;
+    border: dashed 2px hsl(0, 0%, 50%);/*点線*/
+}
+.study_box p {
+    margin: 5px;
+    padding: 5px;
+}
+
+.study_box_maru{
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  background: hsl(0, 0%, 0%);
+  /* color: hsl(0,0%,0%); */
+  /* background-image: linear-gradient(45deg, #FFFF 0%, #FFFF 100%); */
+  transition: .4s;
+}
+.study_box_maru p {
+  font-family: "M PLUS 1p";
+  color: hsl(0,0%,100%);
+  margin: 3px;
+  padding: 3px;
+}
+
+.study_box_left {
+    position: relative;
+    top:-30px;
+    left:20px;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    /* color: hsl(0,0%,0%); */
+    border-left: solid 2px hsl(0,0%,0%);
+}
+.study_box_left p {
+    margin: 0;
+    padding: 0;
+}
+
+.study_outline{
+  cursor : pointer;
+ transition:0.5s all;
+ /* letter-spacing:1em; */
+ /* text-align:center; */
+ color:white;
+ font-size:15px;
+}
+
+.study_outline:hover{
+ letter-spacing:0.1em;
+ transition:0.3s all;
+}
+
 .hanamaru-app{
   position: absolute;
   z-index: 40;
@@ -296,10 +375,13 @@ a.movie-btn:hover {
 
 /* 文字囲う */
 .kakoi {
-    padding: 0.5em 1em;
+    padding: 1em;
     margin: 2em 0;
     /* font-weight: bold; */
-    border: solid 2px hsl(0, 0%, 40%);
+    border: solid 2px;
+    font-family: "M PLUS Rounded 1c";
+    /* font-size: 10px; */
+
 }
 .kakoi p {
     margin: 2em;
