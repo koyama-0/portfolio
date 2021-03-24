@@ -17,6 +17,7 @@
 }
 
 /* フォント */
+
 .wf-mplus1p { font-family: "M PLUS 1p"; }
 .wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
 .kosugimaru { font-family: 'Kosugi Maru', sans-serif; }
@@ -31,6 +32,7 @@
 .bold { font-weight: 700; }
 .extrabold { font-weight: 800; }
 .black { font-weight: 900; }
+
 
 @font-face {
   font-family:'mameron';
@@ -81,15 +83,26 @@
   height : 5%;
 }
 
-.design_font_tex{
-  /* font-family: 'Sawarabi Mincho', sans-serif; */
-  font-family: 'Shippori Mincho', serif;
+.d_s_tex{
   font-weight: 300;
-  font-size:1px;
+  font-size:10px;
   line-height:15px;
-  letter-spacing: 1px; /*文字間隔*/
+  letter-spacing: 1px;
   color: hsl(0, 0%, 10%);
 }
+
+
+
+.design_font_tex{
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  /* font-family: 'Shippori Mincho','M PLUS Rounded 1c', serif; */
+  font-weight: 300;
+  font-size:10px;
+  line-height:15px;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 10%);
+}
+
 .design_font_tex_m{
   /* font-family: 'Sawarabi Mincho', sans-serif; */
   font-family: 'M PLUS Rounded 1c';
