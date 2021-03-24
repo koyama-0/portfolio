@@ -107,6 +107,7 @@
   font-size:25px;
   line-height:20px;
 }
+
 .design_font_title_e{
   /* font-family: 'Sawarabi Mincho', sans-serif; */
   font-family: "M PLUS Rounded 1c";
@@ -164,9 +165,18 @@
   font-weight: bold;
 }
 
-.prev-next-box {
-  display: flex;
-  justify-content: space-between;
+.prev-next-font{
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 400;
+  letter-spacing: 10px; /*文字間隔*/
+  font-size:25px;       /*文字大きさ*/
+  line-height:15px;     /*行間*/
+  color: hsl(0, 0%, 70%);
+}
+
+.prev-next-font:hover{
+  font-size:30px;
+  transition:0.1s all;
 }
 
 .slider-list_p {
@@ -183,11 +193,6 @@
   align-items: center;
   font-size: 30px;
   font-weight: bold;
-}
-
-.prev-next-box_p {
-  display: flex;
-  justify-content: space-between;
 }
 
 
