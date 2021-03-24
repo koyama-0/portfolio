@@ -105,9 +105,9 @@
 
 .design_font_tex_m{
   /* font-family: 'Sawarabi Mincho', sans-serif; */
-  font-family: 'M PLUS Rounded 1c';
+  /* font-family: 'M PLUS Rounded 1c'; */
   font-weight: 400;
-  font-size:1px;
+  /* font-size:10px; */
   line-height:15px;
 }
 
