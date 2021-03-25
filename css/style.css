@@ -211,23 +211,23 @@
 
 .study_tex_1{
   font-family: "M PLUS 1p";
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 4px; /*文字間隔*/
-  font-size:20px;       /*文字大きさ*/
+  font-size:14pt;       /*文字大きさ*/
 }
 
 .study_tex_2{
   font-family: "M PLUS 1p";
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 2px;
-  font-size:15px;
+  font-size:12pt;
 }
 
 .study_tex_3{
   font-family: "M PLUS 1p";
-  font-weight: 100;
-  font-size:13px;       /*文字大きさ*/
-  color: hsl(0, 0%, 50%);  /*文字色*/
+  font-weight: 300;
+  font-size:10pt;       /*文字大きさ*/
+  color: hsl(0, 0%, 30%);  /*文字色*/
 }
 
 .study_box {
@@ -406,6 +406,40 @@ a.movie-btn:hover {
 .myname {
   display: flex;
   top: 70px;
+}
+
+.about_sub{
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: "M PLUS 1p";
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);  /*文字色*/
+  letter-spacing: 3px; /*文字間隔*/
+  /* font-size:15px;       /*文字大きさ*/
+  line-height:15px;     /*行間*/
+}
+
+.about_tex{
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 400;
+  color: hsl(0, 0%, 30%);  /*文字色*/
+  font-size:10pt;       /*文字大きさ*/
+  letter-spacing: 2px; /*文字間隔*/
+  line-height:23px;     /*行間*/
+
+}
+
+.con_sub:hover{
+  letter-spacing:0.3em;
+  transition:0.3s all;
+}
+
+.tate-line{
+  /* margin-left: 100px; */
+  width: 2px;
+  border-radius: 1px; /* 線幅の半分 */
+  height: 98%;
+  background-color: black;
 }
 
 .twitter{
@@ -595,7 +629,7 @@ a.movie-btn:hover {
   font-weight: bold;
   padding: 0.25em 0;
   text-decoration: none;
-  color: rgba(0, 125, 150, 0.3);
+  color: hsl(0, 0%, 50%);
   cursor: pointer;
 }
 
@@ -607,7 +641,7 @@ a.movie-btn:hover {
   top:100%;
   left: 0;
   border-radius: 3px;
-  background:rgba(0, 125, 150, 0.3);
+  background:hsl(0, 0%, 50%);
   transition: .2s;
 }
 
@@ -620,7 +654,7 @@ a.movie-btn:hover {
   position: relative;
   display: inline-block;
   font-weight: bold;
-  color: hsl(0, 0%, 50%);  /*文字色*/
+  color: hsl(0, 0%, 0%);  /*文字色*/
   padding: 0.25em 0;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.1);
